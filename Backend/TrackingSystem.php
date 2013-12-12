@@ -31,11 +31,11 @@ class TrackingSystem
 
         if($inputtype == 0)
         {
-            $sql = "SELECT Company_Name, ProNumber, Service, Equipment, Status, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE ProNumber = '$input'";
+            $sql = "SELECT id, Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE ProNumber = '$input'";
         }
         elseif($inputtype == 1)
         {
-            $sql = "SELECT Company_Name, ProNumber, Service, Equipment, Status, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE Company_Name = '$input'";
+            $sql = "SELECT id, Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE Company_Name = '$input'";
         }
 
         try{
@@ -57,7 +57,7 @@ class TrackingSystem
         return array('result'=>$result, 'inputtype'=>$inputtype);
     }
 
-    function addShipmentInfo($pronumber, $status, $service, $equipment, $companyname, $currentLocationCity, $currentLocationState)
+    function addShipmentInfo($pronumber, $status, $pickuplocation, $deliverylocation, $service, $equipment, $companyname, $currentLocationCity, $currentLocationState)
     {
         try{
             $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', '');
@@ -65,15 +65,17 @@ class TrackingSystem
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $query = $pdo->prepare('INSERT INTO Shipment_Info (Company_Name, ProNumber, Service, Equipment, Status, CurrentLocationCity, CurrentLocationState, entryDate) VALUES (:companyname, :pronumber, :service, :equipment, :status, :CurrentLocation-City, :CurrentLocation-State, NOW())');
+        $query = $pdo->prepare('INSERT INTO Shipment_Info (Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState, entryDate) VALUES (:companyname, :pronumber, :service, :equipment, :status, :pickuplocation, :deliverylocation, :CurrentLocation-City, :CurrentLocation-State, :time)');
         $query->execute(array(':companyname'=>$companyname,
         ':pronumber'=>$pronumber,
             ':service'=>$service,
             ':equipment'=>$equipment,
             ':status'=>$status,
+            ':pickuplocation'=>$pickuplocation,
+            ':deliverylocation'=>$deliverylocation,
             ':CurrentLocation-City'=>$currentLocationCity,
             ':CurrentLocation-State'=>$currentLocationState,
-
+            ':time'=>time()
             ));
         $pdo = NULL;
     }
@@ -83,7 +85,7 @@ class TrackingSystem
         //todo::use SQL UPDATE to update shipment status!!!!!!!!!!!!!!!!!
     }
 
-    function UploadtoDB($companyname, $doctype, $location)
+    function UploadtoDB($ProNumber, $doctype, $location)
     {
         try{
             $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
@@ -91,15 +93,15 @@ class TrackingSystem
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $query = $pdo->prepare('INSERT INTO uploads (Company_Name, Document_Type, Location) VALUES (:companyname, :documenttype, :location)');
-        $query->execute(array(':companyname'=>$companyname,
+        $query = $pdo->prepare('INSERT INTO uploads (ProNumber, Document_Type, Location) VALUES (:ProNumber, :documenttype, :location)');
+        $query->execute(array(':ProNumber'=>$ProNumber,
             ':documenttype'=>$doctype,
             ':location'=>'upload/'.$location
         ));
         $pdo = NULL;
     }
 
-    function getUploads()
+    function getUploads($record=0)
     {
         try{
             $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
@@ -111,10 +113,16 @@ class TrackingSystem
 
         if($_SESSION['loginType'] == 'employee')
         {
-            $sql = "SELECT Company_Name, Document_Type, Location FROM uploads";
+            if($record != 0)
+            {
+                $sql = "SELECT ProNumber, Document_Type, Location FROM uploads WHERE ProNumber ='$record'";
+            }
+            else{
+                $sql = "SELECT ProNumber, Document_Type, Location FROM uploads";
+            }
         }
         else{
-            $sql = "SELECT Company_Name, Document_Type, Location FROM uploads WHERE Company_Name = '$username'";
+            $sql = "SELECT ProNumber, Document_Type, Location FROM uploads WHERE Company_Name = '$username'";
         }
         $query = $pdo->prepare($sql);
         $query->execute();

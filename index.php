@@ -3,7 +3,13 @@ session_start();
 
 if(isset($_SESSION['loggedin']) == TRUE)
 {
-    $logedin = '<div> Welcome, '. $_SESSION["username"] . ' <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    if($_SESSION['loginType'] == 'employee')
+    {
+        $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
+    else{
+        $logedin = '<div><a href="companyCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
 }
 else{
     $notloggedin = '<div class="form-group">
@@ -50,21 +56,6 @@ else{
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="TrackingSystemLogin.php">Login</a></li>
-
-                        <?php
-                        if(isset($_SESSION['loggedin']))
-                        {
-                            echo '<li class="divider"></li><li><a href="employeeCenter.php">Employee Portal</a></li>';
-                            echo '<li><a href="viewShippments.php">Customer Portal</a></li>';
-                        }
-                        ?>
-
-                    </ul>
-                </li>
             </ul>
         <!--NavBar Login-->
             <form class="navbar-form navbar-right" action="submit.php" method="post">

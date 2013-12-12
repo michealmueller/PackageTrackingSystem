@@ -69,6 +69,11 @@ class upload
         return TRUE;
     }
 
+    function getDocs()
+    {
+
+    }
+
     function create_Structure($compName, $doctype)
     {
         $date = date('M-d-Y');

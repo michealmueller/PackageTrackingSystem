@@ -4,25 +4,26 @@ body {
     background-color:#5858FA;
 }
 
-.row{
+
+.row-main{
     color:#000000;
 }
 
-.row h2{
+.row-main h2{
     color:#000000;
 }
 
 .shipment-container{
     background-color: #ffffff;
-    width:60%;
-    height:350px;
+    width:1128px;
+    height:auto;
     margin: 0 auto;
 }
 
 .form-container{
     background-color: #ffffff;
     width:50%;
-    height:350px;
+    height:525px;
     margin: 0 auto;
 }
 
@@ -32,27 +33,21 @@ body {
 
 .form-group-search{
     width:300px;
-    height:200px;
-    position:absolute;
-    left:50%;
-    top:30%;
-    margin:-100px 0 0 -150px;
+    position:relative;
+    margin: 0 auto;
 }
 
-.instructions{
-    left:50%;
-    right:50%;
-    top:75%;
-    bottom: 25%;
-}
 
 .display{
-    width:650px;
-    height:500px;
-    position:absolute;
-    top:30%;
-    left:22%;
+    width:1124px;
+    height:auto;
+    position:relative;
+    margin: 0 auto;
     text-align: center;
+}
+
+.display-update{
+    padding: 5px;
 }
 
 .displayDocs{
@@ -78,14 +73,14 @@ body {
     text-align: center;
 }
 
-.display table td{
+/*.display table td{
     border: solid thin #000 ;
 }
 
 .form-display table td{
-    /*border: solid thin #000 ;*/
+
     padding:4px;
-}
+}*/
 
 .form-display label{
     text-align: right;

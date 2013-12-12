@@ -57,7 +57,7 @@ if(isset($_POST['submitfrom']))
     }
     elseif($_POST['submitfrom'] == 'employee_add_update')
     {
-        $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+        $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
     }
     elseif($_POST['submitfrom'] == 'upload')
     {

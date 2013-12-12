@@ -9,13 +9,27 @@ session_start();
 
 if(isset($_SESSION['loggedin']) == TRUE)
 {
-    $logedin = '<div> Welcome, '. $_SESSION["username"] . ' <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    if($_SESSION['loginType'] == 'employee')
+    {
+        $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
+    else{
+        $logedin = '<div><a href="companyCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
 }
 else{
     $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
 
 require_once 'Backend\TrackingSystem.php';
+
+if(isset($_GET['record']))
+{
+    $record = $_GET['record'];
+}
+else{
+    $record = 0;
+}
 
 ?>
 
@@ -86,19 +100,28 @@ if($_SESSION['loggedin'] != TRUE)
 </div>
 <!--NavBar End-->
 <div class="shipment-container">
-    <div class="displayDocs">
+    <div class="display">
+        <div>
+            <a href="employeeCenter.php" class="btn btn-primary btn-md" role="button">&laquo; Back </a>
+        </div>
+
         <p class="text-center text-primary"><h4>Uploaded Documents</h4></p>
         <table class="table table-hover">
             <tr>
-                <td>Company Name</td>
-                <td>Document Type</td>
-                <td>View File</td>
+                <td><b>Company Name</b></td>
+                <td><b>Document Type</td>
+                <td><b>Location</b></td>
+                <td><b>View</b></td>
             </tr>
             <?php
                 $trackingSystem = new Backend\TrackingSystem();
-                $docs = $trackingSystem->getUploads();
-
+                $docs = $trackingSystem->getUploads($record);
                 $arrLength = count($docs)-1;
+            if($docs == NULL)
+            {
+                echo '<h2>There are no documents for this ProNumber!</h2>';
+            }
+            else{
                 for($i=0; $i <= $arrLength; $i++)
                 {
                     echo '<tr>';
@@ -106,8 +129,10 @@ if($_SESSION['loggedin'] != TRUE)
                     {
                         echo '<td>'.$value.'</td>';
                     }
+                    echo '<td><a href="/bestway/'.$docs[$i]['Location'].'">View</a></td>';
                     echo '</tr>';
                 }
+            }
             ?>
         </table>
     </div>
