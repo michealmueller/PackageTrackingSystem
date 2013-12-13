@@ -21,7 +21,7 @@ class Redirect
 
     function customerRedirect()
     {
-        header('Location: companyCenter.php');
+        header('Location: clientCenter.php');
     }
 
     function loginRedirect()

@@ -53,7 +53,10 @@ if(isset($_POST['submitfrom']))
 {
     if($_POST['submitfrom'] == 'standardLogin')
     {
-        $login->checkLogin($_POST['username'], $_POST['password']);
+        if($login->checkLogin($_POST['username'], $_POST['password']) == TRUE)
+        {
+            $_SESSION['loginType'] == 'company';
+        }
     }
     elseif($_POST['submitfrom'] == 'employee_add_update')
     {

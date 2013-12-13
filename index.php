@@ -8,7 +8,7 @@ if(isset($_SESSION['loggedin']) == TRUE)
         $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
     }
     else{
-        $logedin = '<div><a href="companyCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+        $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
     }
 }
 else{
@@ -26,7 +26,7 @@ else{
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BestWay</title>
+    <title>BestWay Transfer & Storage Inc.</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/jumbotron.css" type="text/css">
     <link rel="stylesheet" href="css/FixedNav.css" type="text/css">
@@ -44,7 +44,7 @@ else{
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">Toggle Navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -54,8 +54,8 @@ else{
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
             </ul>
         <!--NavBar Login-->
             <form class="navbar-form navbar-right" action="submit.php" method="post">
@@ -76,26 +76,23 @@ else{
 <!--NavBar End-->
 
 <div class="jumbotron">
-    <div class="container">
-        <h1>Bestway</h1>
-        <p>A safe and financially secure organization that Pride itself on communication with you - the customer. Whether it's a request for general information, rates or tracing - we handle it all in a prompt and professional manner and We provide you with a complete transportation package.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+    <div class="container text-center">
+        <h1>Bestway Tracking Center</h1>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Some basic information about this heading.</p>
+            <h2>Multiple tracking options</h2>
+            <p>Track your packages by client name, or ProNumber!</p>
+        </div>
+        <div class="col-sm-4">
+
         </div>
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Some basic information about this heading.</p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Some basic information about this heading.</p>
+            <h2>Document Storage</h2>
+            <p>Upload and store your documents for quick viewing!</p>
         </div>
     </div>
 

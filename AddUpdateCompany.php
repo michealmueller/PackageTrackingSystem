@@ -55,9 +55,11 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li ><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
+                <li class="active"><a href="AddUpdateCompany.php">Add Shipment</a></li>
+                <li><a href="">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -83,11 +85,11 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
 </div>
 <!--NavBar End-->
 
-<div class="form-container">
-    <div class="form-display-add-update form-group">
+<div class="shipment-container">
+    <div class="display form-group">
 
         <form class="form-container" action="submit.php" method="post">
-            <table>
+            <table class="table table-bordered">
                 <tr>
                     <td><label>Company Name: </label></td>
                     <td>
@@ -207,7 +209,6 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
         </form>
     </div>
     <hr>
-
     <footer>
         <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
     </footer>

@@ -14,7 +14,7 @@ if(isset($_SESSION['loggedin']) == TRUE)
         $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
     }
     else{
-        $logedin = '<div><a href="companyCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+        $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
     }
 }
 else{
@@ -45,7 +45,7 @@ $docs = $trackingSystem->getUploads();
 </head>
 <body>
 <?php
-if($_SESSION['loginType'] != 'employee')
+if($_SESSION['loginType'] != 'company')
 {
     session_destroy();
     echo '<div class="display"><p><h2>You are not a Bestway Client so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
@@ -66,9 +66,9 @@ if($_SESSION['loginType'] != 'employee')
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="employeeCenter.php">Employee Center</a></li>
+                <li class="active"><a href="clientCenter.php">Client Center</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
