@@ -2,15 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08b9b51-a82b-4059-b94d-f71fc90c9adf" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Bestway\companyCenter.php" afterPath="$PROJECT_DIR$/clientCenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddUpdateCompany.php" afterPath="$PROJECT_DIR$/AddUpdateCompany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BestWay-Tracking System.iml" afterPath="$PROJECT_DIR$/.idea/BestWay-Tracking System.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Edit.php" afterPath="$PROJECT_DIR$/Backend/Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/FixedNav.css" afterPath="$PROJECT_DIR$/css/FixedNav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Login.php" afterPath="$PROJECT_DIR$/Backend/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Redirect.php" afterPath="$PROJECT_DIR$/Backend/Redirect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/TrackingSystem.php" afterPath="$PROJECT_DIR$/Backend/TrackingSystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrackingSystemLogin.php" afterPath="$PROJECT_DIR$/TrackingSystemLogin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/addCompany.php" afterPath="$PROJECT_DIR$/Backend/addCompany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/carousel.css" afterPath="$PROJECT_DIR$/css/carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clientCenter.php" afterPath="$PROJECT_DIR$/clientCenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit.php" afterPath="$PROJECT_DIR$/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employeeCenter.php" afterPath="$PROJECT_DIR$/employeeCenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index2.html" afterPath="$PROJECT_DIR$/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jumbotron.css" afterPath="$PROJECT_DIR$/css/jumbotron.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/logout.php" afterPath="$PROJECT_DIR$/Backend/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/mysql-connector-license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpinfo.php" afterPath="$PROJECT_DIR$/phpinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signin.css" afterPath="$PROJECT_DIR$/css/signin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/submit.php" afterPath="$PROJECT_DIR$/submit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/upload.php" afterPath="$PROJECT_DIR$/Backend/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadDocs.php" afterPath="$PROJECT_DIR$/uploadDocs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewDocs.php" afterPath="$PROJECT_DIR$/viewDocs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewShippments.php" afterPath="$PROJECT_DIR$/viewShippments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -46,11 +76,8 @@
           <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="-15.692307" vertical-offset="595" max-vertical-offset="1972">
-                  <folding>
-                    <marker date="1386891294474" expanded="true" signature="677:829" placeholder="..." />
-                    <marker date="1386891294474" expanded="true" signature="878:1039" placeholder="..." />
-                  </folding>
+                <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1972">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -58,7 +85,7 @@
           <file leaf-file-name="employeeCenter.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/employeeCenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="-19.615385" vertical-offset="663" max-vertical-offset="3264">
+                <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3264">
                   <folding />
                 </state>
               </provider>
@@ -67,7 +94,7 @@
           <file leaf-file-name="AddUpdateCompany.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="-21.576923" vertical-offset="459" max-vertical-offset="3910">
+                <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
                   <folding />
                 </state>
               </provider>
@@ -76,7 +103,7 @@
           <file leaf-file-name="clientCenter.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/clientCenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="-12.961538" vertical-offset="853" max-vertical-offset="3230">
+                <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
                   <folding />
                 </state>
               </provider>
@@ -94,16 +121,7 @@
           <file leaf-file-name="Login.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Backend/Login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="782">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TrackingSystemLogin.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/TrackingSystemLogin.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="25" selection-start="2836" selection-end="2836" vertical-scroll-proportion="-16.346153" vertical-offset="510" max-vertical-offset="1394">
+                <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
                   <folding />
                 </state>
               </provider>
@@ -112,7 +130,7 @@
           <file leaf-file-name="submit.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/submit.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="48" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.5253837" vertical-offset="524" max-vertical-offset="1394">
+                <state line="46" column="39" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.31620112" vertical-offset="499" max-vertical-offset="1394">
                   <folding />
                 </state>
               </provider>
@@ -179,12 +197,12 @@
         <option value="$PROJECT_DIR$/customerCenter.php" />
         <option value="$PROJECT_DIR$/companyCenter.php" />
         <option value="$PROJECT_DIR$/Backend/logout.php" />
-        <option value="$PROJECT_DIR$/css/jumbotron.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/submit.php" />
         <option value="$PROJECT_DIR$/clientCenter.php" />
         <option value="$PROJECT_DIR$/employeeCenter.php" />
         <option value="$PROJECT_DIR$/AddUpdateCompany.php" />
+        <option value="$PROJECT_DIR$/css/jumbotron.css" />
       </list>
     </option>
   </component>
@@ -240,35 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Bestway" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BestWay-Tracking System" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bestway" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BestWay-Tracking System" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bestway" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend" />
+              <option name="myItemId" value="PackageTrackingSystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,17 +277,6 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-  </component>
-  <component name="PublishConfig" serverName="Bestway" serverId="e9e1c771-af10-4f31-b4e3-22ffd15ae7d0">
-    <servers>
-      <server id="e9e1c771-af10-4f31-b4e3-22ffd15ae7d0">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="Bestway" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -358,7 +337,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,7 +345,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11826923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11579509" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115625" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28235295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -381,6 +360,11 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -409,6 +393,76 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employeeCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/TrackingSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="5" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="48" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jumbotron.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="472" column="2" selection-start="6031" selection-end="6033" vertical-scroll-proportion="0.0" vertical-offset="9986" max-vertical-offset="120751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uploadDocs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="63" selection-start="2104" selection-end="2104" vertical-scroll-proportion="-32.692307" vertical-offset="0" max-vertical-offset="1156" />
@@ -457,6 +511,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employeeCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/jumbotron.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1802">
@@ -464,54 +553,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="-15.692307" vertical-offset="595" max-vertical-offset="1972">
-          <folding>
-            <marker date="1386891294474" expanded="true" signature="677:829" placeholder="..." />
-            <marker date="1386891294474" expanded="true" signature="878:1039" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="-21.576923" vertical-offset="459" max-vertical-offset="3910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientCenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="-12.961538" vertical-offset="853" max-vertical-offset="3230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employeeCenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="-19.615385" vertical-offset="663" max-vertical-offset="3264">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrackingSystemLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="25" selection-start="2836" selection-end="2836" vertical-scroll-proportion="-16.346153" vertical-offset="510" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/submit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="48" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.5253837" vertical-offset="524" max-vertical-offset="1394">
+        <state line="46" column="39" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.31620112" vertical-offset="499" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>
