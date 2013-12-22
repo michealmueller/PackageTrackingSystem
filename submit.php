@@ -7,7 +7,7 @@
  */
 session_start();
 
- require_once 'Backend\addCompany.php';
+ require_once 'Backend\addClient.php';
  require_once 'Backend\Login.php';
  require_once 'Backend\TrackingSystem.php';
  require_once 'Backend\Redirect.php';
@@ -17,7 +17,7 @@ session_start();
 
 $Redirect = new \Backend\Redirect();
 $login = new \Backend\Login();
-$companyAdd = new \Backend\addCompany();
+$addClient = new \Backend\addClient();
 $tracking = new \Backend\TrackingSystem();
 $upload = new \Backend\upload();
 
@@ -85,6 +85,10 @@ if(isset($_POST['submitfrom']))
             $tracking->UploadtoDB($_POST['pronumber'], $_POST['docType'], $upload->uploadName);
             $Redirect->uploadRedirect();
         }
+    }
+    elseif($_POST['submitfrom'] == 'addClient')
+    {
+        $addClient->getInfo($_POST['username'], $_POST['password'], $_POST['email']);
     }
 }
 ?>

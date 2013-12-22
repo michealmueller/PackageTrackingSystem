@@ -10,16 +10,16 @@ namespace Backend;
 use PDO;
 use PDOException;
 
-class addCompany
+class addClient
 {
-    function getInfo($compUser, $compPass, $compName)
+    function getInfo($compUser, $compPass, $email)
     {
         if (self::checkInput() == false)
         {
             //todo::echo out error
         }
 
-        self::add($compUser, $compPass, $compName);
+        self::add($compUser, $compPass, $email);
 
 
     }
@@ -29,7 +29,7 @@ class addCompany
         //todo::check userinput
     }
 
-    function add($compUser, $compPass, $compName)
+    function add($compUser, $compPass, $email)
     {
         $compPass = password_hash($compPass, PASSWORD_BCRYPT);
 
@@ -39,10 +39,9 @@ class addCompany
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $query = $pdo->prepare('INSERT INTO cust_login (username, password, company) VALUES (:compUser, :compPass, :compName)');
-        $query->execute(array(':compUser'=>$compUser,
-                        ':compPass'=>$compPass,
-                        ':compName'=>$compName));
+        $sql = "INSERT INTO cust_login (username, password, email) VALUES('$compUser', '$compPass', '$email')";
+        $query = $pdo->prepare($sql);
+        $query->execute();
 
     }
 } 

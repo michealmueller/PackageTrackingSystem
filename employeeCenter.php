@@ -11,14 +11,21 @@ if(isset($_SESSION['loggedin']) == TRUE)
 {
     if($_SESSION['loginType'] == 'employee')
     {
-        $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+        $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group">
+        <a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a>
+        </div></div>';
     }
     else{
-        $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+        $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group">
+        <a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a>
+        </div></div>';
     }
 }
 else{
-    $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
+    $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username"
+                        placeholder="Username"required></div><div class="form-group"><input
+                        class="form-control input-sm" type="password" name="password" placeholder="Password"
+                        required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
 
 require_once 'Backend\TrackingSystem.php';
@@ -48,7 +55,8 @@ $docs = $trackingSystem->getUploads();
     if($_SESSION['loginType'] != 'employee')
     {
         session_destroy();
-        echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
+        echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br>
+        <br>Sorry for the inconvenience</h2></p></div>';
         exit();
     }
 ?>
@@ -70,7 +78,7 @@ $docs = $trackingSystem->getUploads();
                 <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
                 <li><a href="clientCenter.php">Client Center</a></li>
                 <li><a href="addShipment.php">Add Shipment</a></li>
-                <li><a href="">Add Client</a></li>
+                <li><a href="addClient.php">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -108,8 +116,11 @@ elseif(isset($_SESSION['ProNumber']))
 ?>
 <form class="form-inline" action="" method="post">
     <div class="form-group-search">
-        <div class="instructions"><h4>Enter your Pro Number or Company Name to view shipment(s).</h4></div>;
-        <input class="form-control input-sm input-width" type="text" name="input" placeholder="ProNumber or Company Name" <?php if(isset($input)){echo 'value="' .$input. '"';} ?> autofocus>
+        <div class="instructions"><h4>Enter your Pro Number or Company Name to view shipment(s).</h4></div>
+        <input class="form-control input-sm input-width" type="text" name="input"
+               placeholder="ProNumber or Company Name" <?php if(isset($input)){echo 'value="' .$input. '"';} ?>
+               autofocus>
+
         <input class="btn btn-success btn-sm" type="submit" name="submit" value="Search">
         <input type="hidden" name="submitfrom" value="">
     </div>

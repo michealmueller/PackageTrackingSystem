@@ -1,10 +1,13 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: micheal
- * Date: 11/30/13
- * Time: 12:36 PM
+ * User: Micheal
+ * Date: 12/22/13
+ * Time: 12:54 PM
  */
+
+require_once 'Backend\addClient.php';
+
 session_start();
 
 if(isset($_SESSION['loggedin']) == TRUE)
@@ -31,7 +34,7 @@ $docs = $trackingSystem->getUploads();
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BestWay - Company Center</title>
+    <title>BestWay - Employee Center</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/jumbotron.css" type="text/css">
     <link rel="stylesheet" href="css/FixedNav.css" type="text/css">
@@ -45,10 +48,10 @@ $docs = $trackingSystem->getUploads();
 </head>
 <body>
 <?php
-if($_SESSION['loginType'] != 'company')
+if($_SESSION['loginType'] != 'employee')
 {
     session_destroy();
-    echo '<div class="display"><p><h2>You are not a Bestway Client so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
+    echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
     exit();
 }
 ?>
@@ -67,8 +70,10 @@ if($_SESSION['loginType'] != 'company')
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="employeeCenter.php">Employee Center</a></li>
-                <li class="active"><a href="clientCenter.php">Client Center</a></li>
+                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
+                <li><a href="addShipment.php">Add Shipment</a></li>
+                <li class="active"><a href="addClient.php">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -93,106 +98,58 @@ if($_SESSION['loginType'] != 'company')
     </div>
 </div>
 <!--NavBar End-->
-<?php
-if(isset($_POST['input']))
-{
-    $input = $_POST['input'];
-}
-?>
-<form class="form-inline" action="" method="post">
-    <div class="form-group-search">
-        <div class="instructions"><h4>Enter your Pro Number or Company Name to view shipment(s).</h4></div>;
-        <input class="form-control input-sm input-width" type="text" name="input" placeholder="ProNumber or Company Name" <?php if(isset($input)){echo 'value="' .$input. '"';} ?> autofocus>
-        <input class="btn btn-success btn-sm" type="submit" name="submit" value="Search">
-        <input type="hidden" name="submitfrom" value="">
-    </div>
-</form>
+
 <div class="shipment-container">
-    <div class="display ">
-        <table class="table table-bordered">
-            <tr>
-                <td><b>Record Number</b></td>
-                <td><b>Company Name</b></td>
-                <td><b>ProNumber</b></td>
-                <td><b>Service</b></td>
-                <td><b>Equipment</b></td>
-                <td><b>Status</b></td>
-                <td><b>Picked Up Location</b></td>
-                <td><b>Delivery Location</b></td>
-                <td colspan="2"><b>Current Location</b></td>
-                <?php
-                if(isset($input))
-                {
-                    if(is_numeric($input))
-                    {
-                        $inputType = 1;
-                        echo '<td><b>Documents</b></td>';
-                    }
-                }
-
-                if($_SESSION['loginType'] == 'employee')
-                {
-                    echo '<td><b>Edit</b></td>';
-                }
-                ?>
-
-            </tr>
-
-            <?php
-            if(isset($_POST['submit']))
-            {
-                $shipments = $trackingSystem->getShipment($_POST['input']);
-                //make sure to end div!  //.$shipments['inputtype']
-
-                //print_r($shipments['result']);
-
-                if($shipments['inputtype'] == 0)
-                {
-                    echo '<tr>';
-                    foreach($shipments['result'][0] as $value)
-                    {
-                        echo '<td>'.$value.'</td>';
-                    }
-
-                    echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
-
-                    if($_SESSION['loginType'] == 'employee')
-                    {
-                        echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][0]['id'].'">Edit</a></b></td>';
-                    }
-
-                    echo '</tr>';
-                }
-                elseif($shipments['inputtype'] == 1)
-                {
-                    //get length of records
-                    $arrlength = count($shipments['result']) - 1;
-
-                    for($i=0;$i<=$arrlength;$i++)
-                    {
-                        echo '<tr>';
-                        foreach($shipments['result'][$i] as $value)
-                        {
-                            echo '<td>'.$value.'</td>';
-                        }
-                        echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][$i]['id'].'">Edit</a></b></td>';
-                        echo '</tr>';
-                    }
-
-                }
-            }
-            ?>
-        </table>
-        <hr>
+    <div class="display display-update">
+        <h3 class="form-signin-heading">Add Client</h3>
+        <form class="form-container" action="submit.php" method="post">
+            <table class="table table-bordered">
+                <tr>
+                    <td><label>Username:</label></td>
+                    <td>
+                        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>E-mail:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" class="form-control" placeholder="E-Mail" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="hidden" name="submitfrom" value="addClient">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div>
         <footer>
             <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
         </footer>
     </div>
 </div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>

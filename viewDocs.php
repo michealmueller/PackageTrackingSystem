@@ -51,14 +51,6 @@ else{
 
 </head>
 <body>
-<?php
-if($_SESSION['loginType'] != 'employee')
-{
-    session_destroy();
-    echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
-    exit();
-}
-?>
 <!--NAvBar-->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -74,7 +66,7 @@ if($_SESSION['loginType'] != 'employee')
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="employeeCenter.php">Employee Center</a></li>
                 <li><a href="clientCenter.php">Client Center</a></li>
                 <li><a href="addShipment.php">Add Shipment</a></li>
                 <li><a href="">Add Client</a></li>

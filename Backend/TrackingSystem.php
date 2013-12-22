@@ -123,10 +123,6 @@ class TrackingSystem
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $username = $_SESSION['username'];
-
-        if($_SESSION['loginType'] == 'employee')
-        {
             if($record != 0)
             {
                 $sql = "SELECT ProNumber, Document_Type, Location FROM uploads WHERE ProNumber ='$record'";
@@ -134,10 +130,6 @@ class TrackingSystem
             else{
                 $sql = "SELECT ProNumber, Document_Type, Location FROM uploads";
             }
-        }
-        else{
-            $sql = "SELECT ProNumber, Document_Type, Location FROM uploads WHERE Company_Name = '$username'";
-        }
         $query = $pdo->prepare($sql);
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
