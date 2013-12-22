@@ -39,7 +39,7 @@ class addCompany
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $query = $pdo->prepare('insert into cust_login (username, password, company) VALUES (:compUser, :compPass, :compName)');
+        $query = $pdo->prepare('INSERT INTO cust_login (username, password, company) VALUES (:compUser, :compPass, :compName)');
         $query->execute(array(':compUser'=>$compUser,
                         ':compPass'=>$compPass,
                         ':compName'=>$compName));

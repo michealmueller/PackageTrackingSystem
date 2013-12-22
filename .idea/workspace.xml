@@ -2,47 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08b9b51-a82b-4059-b94d-f71fc90c9adf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddUpdateCompany.php" afterPath="$PROJECT_DIR$/AddUpdateCompany.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BestWay-Tracking System.iml" afterPath="$PROJECT_DIR$/.idea/BestWay-Tracking System.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Edit.php" afterPath="$PROJECT_DIR$/Backend/Edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/FixedNav.css" afterPath="$PROJECT_DIR$/css/FixedNav.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\upload\test_BOL_Micheal-Mueller-Resume.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\upload\test_POD_README.pdf" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\AddUpdateCompany.php" afterPath="$PROJECT_DIR$/addShipment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Login.php" afterPath="$PROJECT_DIR$/Backend/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/Redirect.php" afterPath="$PROJECT_DIR$/Backend/Redirect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/TrackingSystem.php" afterPath="$PROJECT_DIR$/Backend/TrackingSystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrackingSystemLogin.php" afterPath="$PROJECT_DIR$/TrackingSystemLogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/addCompany.php" afterPath="$PROJECT_DIR$/Backend/addCompany.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/carousel.css" afterPath="$PROJECT_DIR$/css/carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clientCenter.php" afterPath="$PROJECT_DIR$/clientCenter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit.php" afterPath="$PROJECT_DIR$/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employeeCenter.php" afterPath="$PROJECT_DIR$/employeeCenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index2.html" afterPath="$PROJECT_DIR$/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jumbotron.css" afterPath="$PROJECT_DIR$/css/jumbotron.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/logout.php" afterPath="$PROJECT_DIR$/Backend/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/mysql-connector-license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpinfo.php" afterPath="$PROJECT_DIR$/phpinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signin.css" afterPath="$PROJECT_DIR$/css/signin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/submit.php" afterPath="$PROJECT_DIR$/submit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/upload.php" afterPath="$PROJECT_DIR$/Backend/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadDocs.php" afterPath="$PROJECT_DIR$/uploadDocs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewDocs.php" afterPath="$PROJECT_DIR$/viewDocs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewShippments.php" afterPath="$PROJECT_DIR$/viewShippments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trucking.iws" />
@@ -70,14 +46,17 @@
     <favorites_list name="trucking" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.77516574">
+    <splitter split-orientation="horizontal" split-proportion="0.78978276">
       <split-first>
         <leaf>
           <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1972">
-                  <folding />
+                <state line="88" column="21" selection-start="3969" selection-end="3969" vertical-scroll-proportion="-57.53846" vertical-offset="0" max-vertical-offset="2295">
+                  <folding>
+                    <marker date="1387667114133" expanded="true" signature="677:829" placeholder="..." />
+                    <marker date="1387667114133" expanded="true" signature="878:1039" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -85,25 +64,73 @@
           <file leaf-file-name="employeeCenter.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/employeeCenter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3264">
+                <state line="155" column="121" selection-start="6257" selection-end="6257" vertical-scroll-proportion="-34.0" vertical-offset="1751" max-vertical-offset="3332">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AddUpdateCompany.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
+          <file leaf-file-name="Edit.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Backend/Edit.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
+                <state line="35" column="57" selection-start="824" selection-end="824" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="969">
+                  <folding>
+                    <marker date="1387429041037" expanded="true" signature="634:689" placeholder="SELECT * FRO..Shipment_Info..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="edit.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/edit.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="104" column="71" selection-start="4186" selection-end="4186" vertical-scroll-proportion="57.53846" vertical-offset="3264" max-vertical-offset="4539">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="clientCenter.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/clientCenter.php">
+          <file leaf-file-name="viewDocs.php" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/viewDocs.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
+                <state line="114" column="69" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.27821228" vertical-offset="1689" max-vertical-offset="2618">
+                  <folding>
+                    <marker date="1387700589648" expanded="true" signature="5208:5394" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="uploadDocs.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/uploadDocs.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="124" column="76" selection-start="5242" selection-end="5242" vertical-scroll-proportion="-25.5" vertical-offset="1445" max-vertical-offset="2737">
+                  <folding>
+                    <marker date="1387695604254" expanded="true" signature="4641:4673" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="4729:4762" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="4861:4914" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="4882:4914" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="4985:5018" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="5298:5331" placeholder="..." />
+                    <marker date="1387695604254" expanded="true" signature="5416:5445" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="submit.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/submit.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="60" column="50" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-1.1153846" vertical-offset="991" max-vertical-offset="1615">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Backend/upload.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="41" column="78" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-21.576923" vertical-offset="51" max-vertical-offset="1479">
                   <folding />
                 </state>
               </provider>
@@ -112,7 +139,35 @@
           <file leaf-file-name="TrackingSystem.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Backend/TrackingSystem.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="5" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2363">
+                <state line="56" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-8.0" vertical-offset="642" max-vertical-offset="2499">
+                  <folding>
+                    <marker date="1387698099846" expanded="true" signature="556:742" placeholder="SELECT id, C..Shipment_Info..." />
+                    <marker date="1387698099846" expanded="true" signature="817:1005" placeholder="SELECT id, C..Shipment_Info..." />
+                    <marker date="1387698099846" expanded="true" signature="2082:2507" placeholder="INSERT INTO ..." />
+                    <marker date="1387698099846" expanded="true" signature="2082:2467" placeholder="INSERT INTO ..." />
+                    <marker date="1387698099846" expanded="true" signature="3046:3443" placeholder="UPDATE shipm..." />
+                    <marker date="1387698099846" expanded="true" signature="3932:4034" placeholder="INSERT INTO ..." />
+                    <marker date="1387698099846" expanded="true" signature="4660:4741" placeholder="SELECT ProNu..uploads..." />
+                    <marker date="1387698099846" expanded="true" signature="4800:4854" placeholder="SELECT ProNu..uploads..." />
+                    <marker date="1387698099846" expanded="true" signature="4915:5002" placeholder="SELECT ProNu..uploads..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addShipment.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/addShipment.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="214" column="82" selection-start="10107" selection-end="10107" vertical-scroll-proportion="-15.5" vertical-offset="3235" max-vertical-offset="4165">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Redirect.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Backend/Redirect.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="45" column="0" selection-start="872" selection-end="872" vertical-scroll-proportion="-19.923077" vertical-offset="162" max-vertical-offset="799">
                   <folding />
                 </state>
               </provider>
@@ -121,17 +176,22 @@
           <file leaf-file-name="Login.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Backend/Login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
-                  <folding />
+                <state line="17" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="765">
+                  <folding>
+                    <marker date="1387690003283" expanded="true" signature="504:570" placeholder="SELECT usern..cust_login..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="submit.php" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/submit.php">
+          <file leaf-file-name="addCompany.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Backend/addCompany.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="39" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.31620112" vertical-offset="499" max-vertical-offset="1394">
-                  <folding />
+                <state line="41" column="43" selection-start="850" selection-end="850" vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="799">
+                  <folding>
+                    <marker date="1387690003277" expanded="true" signature="839:932" placeholder="INSERT INTO ..." />
+                    <marker date="1387690003277" expanded="true" signature="845:932" placeholder="insert into ..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -139,7 +199,7 @@
           <file leaf-file-name="logout.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Backend/logout.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
+                <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="306">
                   <folding />
                 </state>
               </provider>
@@ -152,16 +212,7 @@
           <file leaf-file-name="jumbotron.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/jumbotron.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1802">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="472" column="2" selection-start="6031" selection-end="6033" vertical-scroll-proportion="0.0" vertical-offset="9986" max-vertical-offset="120751">
+                <state line="42" column="12" selection-start="532" selection-end="532" vertical-scroll-proportion="0.4914347" vertical-offset="255" max-vertical-offset="1819">
                   <folding />
                 </state>
               </provider>
@@ -184,25 +235,35 @@
       <MyDateState />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/TrackingSystem_Login.php" />
-        <option value="$PROJECT_DIR$/Backend/Login.php" />
         <option value="$PROJECT_DIR$/TrackingSystem_Login.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Backend/Redirect.php" />
         <option value="$PROJECT_DIR$/customerCenter.php" />
         <option value="$PROJECT_DIR$/companyCenter.php" />
         <option value="$PROJECT_DIR$/Backend/logout.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/submit.php" />
         <option value="$PROJECT_DIR$/clientCenter.php" />
-        <option value="$PROJECT_DIR$/employeeCenter.php" />
         <option value="$PROJECT_DIR$/AddUpdateCompany.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/addShipment.php" />
+        <option value="$PROJECT_DIR$/Backend/Login.php" />
+        <option value="$PROJECT_DIR$/Backend/addCompany.php" />
+        <option value="$PROJECT_DIR$/edit.php" />
+        <option value="$PROJECT_DIR$/uploadDocs.php" />
+        <option value="$PROJECT_DIR$/Backend/upload.php" />
+        <option value="$PROJECT_DIR$/Backend/TrackingSystem.php" />
+        <option value="$PROJECT_DIR$/submit.php" />
+        <option value="$PROJECT_DIR$/Backend/Redirect.php" />
+        <option value="$PROJECT_DIR$/employeeCenter.php" />
         <option value="$PROJECT_DIR$/css/jumbotron.css" />
+        <option value="$PROJECT_DIR$/viewDocs.php" />
       </list>
     </option>
   </component>
@@ -262,6 +323,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BestWay-Tracking System" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PackageTrackingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BestWay-Tracking System" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PackageTrackingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -270,7 +359,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="SQL Dialects" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -333,29 +422,34 @@
       <created>1386875976039</created>
       <updated>1386875976039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="another commit - fresh, lost work but getting it fixed again">
+      <created>1387429174398</created>
+      <updated>1387429174398</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11826923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115625" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28235295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11302083" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28229168" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -374,7 +468,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="another commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="another commit" />
+    <MESSAGE value="another commit - fresh, lost work but getting it fixed again" />
+    <option name="LAST_COMMIT_MESSAGE" value="another commit - fresh, lost work but getting it fixed again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -388,15 +483,23 @@
           <line>9</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/submit.php</url>
+          <line>71</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
-          <folding />
+          <folding>
+            <marker date="1387667114133" expanded="true" signature="677:829" placeholder="..." />
+            <marker date="1387667114133" expanded="true" signature="878:1039" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -407,7 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
+    <entry file="file://$PROJECT_DIR$/addShipment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
           <folding />
@@ -417,21 +520,53 @@
     <entry file="file://$PROJECT_DIR$/clientCenter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
-          <folding />
+          <folding>
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/TrackingSystem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="5" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2363">
-          <folding />
+          <folding>
+            <marker date="1387698099846" expanded="true" signature="556:742" placeholder="SELECT id, C..Shipment_Info..." />
+            <marker date="1387698099846" expanded="true" signature="817:1005" placeholder="SELECT id, C..Shipment_Info..." />
+            <marker date="1387698099846" expanded="true" signature="2082:2507" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="2082:2467" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="3046:3443" placeholder="UPDATE shipm..." />
+            <marker date="1387698099846" expanded="true" signature="3932:4034" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="4660:4741" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387698099846" expanded="true" signature="4800:4854" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387698099846" expanded="true" signature="4915:5002" placeholder="SELECT ProNu..uploads..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
-          <folding />
+          <folding>
+            <marker date="1387690003283" expanded="true" signature="504:570" placeholder="SELECT usern..cust_login..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -463,100 +598,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploadDocs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="63" selection-start="2104" selection-end="2104" vertical-scroll-proportion="-32.692307" vertical-offset="0" max-vertical-offset="1156" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/upload.php">
+    <entry file="file://$PROJECT_DIR$/TrackingSystemLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-26.153847" vertical-offset="204" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/Redirect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="45" selection-start="372" selection-end="372" vertical-scroll-proportion="0.36213017" vertical-offset="0" max-vertical-offset="845" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/addCompany.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
+        <state line="33" column="47" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.3988827" vertical-offset="204" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="472" column="2" selection-start="6031" selection-end="6033" vertical-scroll-proportion="0.0" vertical-offset="9986" max-vertical-offset="120751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/TrackingSystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="5" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="27" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AddUpdateCompany.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
+        <state line="472" column="2" selection-start="6031" selection-end="6033" vertical-scroll-proportion="-2.1302931" vertical-offset="9986" max-vertical-offset="120751">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientCenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="84" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="3230">
+        <state line="109" column="0" selection-start="4495" selection-end="4554" vertical-scroll-proportion="-20.807692" vertical-offset="1312" max-vertical-offset="3230">
+          <folding>
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387429030985" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employeeCenter.php">
+    <entry file="file://$PROJECT_DIR$/addShipment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="42" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3264">
+        <state line="214" column="82" selection-start="10107" selection-end="10107" vertical-scroll-proportion="-15.5" vertical-offset="3235" max-vertical-offset="4165">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/xampp/phpMyAdmin/sql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3469388" vertical-offset="0" max-vertical-offset="29682">
+          <folding>
+            <marker date="1383585901000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1383585901000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1383585901000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
+        <state line="17" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="765">
+          <folding>
+            <marker date="1387690003283" expanded="true" signature="504:570" placeholder="SELECT usern..cust_login..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/addCompany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="43" selection-start="850" selection-end="850" vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="799">
+          <folding>
+            <marker date="1387690003277" expanded="true" signature="839:932" placeholder="INSERT INTO ..." />
+            <marker date="1387690003277" expanded="true" signature="845:932" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="57" selection-start="824" selection-end="824" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="969">
+          <folding>
+            <marker date="1387429041037" expanded="true" signature="634:689" placeholder="SELECT * FRO..Shipment_Info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="21" selection-start="3969" selection-end="3969" vertical-scroll-proportion="-57.53846" vertical-offset="0" max-vertical-offset="2295">
+          <folding>
+            <marker date="1387667114133" expanded="true" signature="677:829" placeholder="..." />
+            <marker date="1387667114133" expanded="true" signature="878:1039" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="78" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-21.576923" vertical-offset="51" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jumbotron.css">
+    <entry file="file://$PROJECT_DIR$/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1802">
+        <state line="104" column="71" selection-start="4186" selection-end="4186" vertical-scroll-proportion="57.53846" vertical-offset="3264" max-vertical-offset="4539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/TrackingSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-8.0" vertical-offset="642" max-vertical-offset="2499">
+          <folding>
+            <marker date="1387698099846" expanded="true" signature="556:742" placeholder="SELECT id, C..Shipment_Info..." />
+            <marker date="1387698099846" expanded="true" signature="817:1005" placeholder="SELECT id, C..Shipment_Info..." />
+            <marker date="1387698099846" expanded="true" signature="2082:2507" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="2082:2467" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="3046:3443" placeholder="UPDATE shipm..." />
+            <marker date="1387698099846" expanded="true" signature="3932:4034" placeholder="INSERT INTO ..." />
+            <marker date="1387698099846" expanded="true" signature="4660:4741" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387698099846" expanded="true" signature="4800:4854" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387698099846" expanded="true" signature="4915:5002" placeholder="SELECT ProNu..uploads..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/Redirect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="872" selection-end="872" vertical-scroll-proportion="-19.923077" vertical-offset="162" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/submit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="39" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.31620112" vertical-offset="499" max-vertical-offset="1394">
+        <state line="60" column="50" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-1.1153846" vertical-offset="991" max-vertical-offset="1615">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employeeCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="121" selection-start="6257" selection-end="6257" vertical-scroll-proportion="-34.0" vertical-offset="1751" max-vertical-offset="3332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jumbotron.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="532" selection-end="532" vertical-scroll-proportion="0.4914347" vertical-offset="255" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadDocs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="76" selection-start="5242" selection-end="5242" vertical-scroll-proportion="-25.5" vertical-offset="1445" max-vertical-offset="2737">
+          <folding>
+            <marker date="1387695604254" expanded="true" signature="4641:4673" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="4729:4762" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="4861:4914" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="4882:4914" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="4985:5018" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="5298:5331" placeholder="..." />
+            <marker date="1387695604254" expanded="true" signature="5416:5445" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewDocs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="69" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.27821228" vertical-offset="1689" max-vertical-offset="2618">
+          <folding>
+            <marker date="1387700589648" expanded="true" signature="5208:5394" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

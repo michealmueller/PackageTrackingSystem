@@ -26,6 +26,7 @@ require_once 'Backend\TrackingSystem.php';
 if(isset($_GET['record']))
 {
     $record = $_GET['record'];
+    $_SESSION['record'] = $_GET['record'];
 }
 else{
     $record = 0;
@@ -51,10 +52,10 @@ else{
 </head>
 <body>
 <?php
-if($_SESSION['loggedin'] != TRUE)
+if($_SESSION['loginType'] != 'employee')
 {
     session_destroy();
-    echo '<div class="display"><p><h2>You are not a Bestway employee or a Bestway Customer, so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
+    echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
     exit();
 }
 ?>
@@ -72,9 +73,11 @@ if($_SESSION['loggedin'] != TRUE)
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
+                <li><a href="addShipment.php">Add Shipment</a></li>
+                <li><a href="">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -99,13 +102,17 @@ if($_SESSION['loggedin'] != TRUE)
     </div>
 </div>
 <!--NavBar End-->
+
 <div class="shipment-container">
     <div class="display">
-        <div>
+        <div class="pull-left">
             <a href="employeeCenter.php" class="btn btn-primary btn-md" role="button">&laquo; Back </a>
         </div>
+        <div class="pull-right">
+            <a href="uploadDocs.php?pronumber=<?php echo $_GET['record']; ?>" class="btn btn-primary btn-md" role="button">Upload Document &raquo;</a>
+        </div>
 
-        <p class="text-center text-primary"><h4>Uploaded Documents</h4></p>
+        <p class="text-center text-primary"><h3><b>Uploaded Documents</b></h3></p>
         <table class="table table-hover">
             <tr>
                 <td><b>Company Name</b></td>
@@ -129,7 +136,7 @@ if($_SESSION['loggedin'] != TRUE)
                     {
                         echo '<td>'.$value.'</td>';
                     }
-                    echo '<td><a href="/bestway/'.$docs[$i]['Location'].'">View</a></td>';
+                    echo '<td><a href="/bestway/upload/'.$docs[$i]['Location'].'">View</a></td>';
                     echo '</tr>';
                 }
             }

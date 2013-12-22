@@ -16,7 +16,6 @@ class Login
     {
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-        //todo::make a single login that checks both DB's for credentials!
         try{
             $pdo = new PDO('mysql:host=localhost;dbname=bestway','root', 'Antimatter1024');
         }catch (PDOException $pdoE){

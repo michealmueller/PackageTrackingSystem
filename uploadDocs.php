@@ -38,6 +38,14 @@ else{
 
 </head>
 <body>
+<?php
+if($_SESSION['loginType'] != 'employee')
+{
+    session_destroy();
+    echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
+    exit();
+}
+?>
 <!--NAvBar-->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -52,24 +60,17 @@ else{
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
+                <li><a href="addShipment.php">Add Shipment</a></li>
+                <li><a href="">Add Client</a></li>
+                <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="TrackingSystemLogin.php">Login</a></li>
-
-                        <?php
-                        if(isset($_SESSION['loggedin']))
-                        {
-                            echo '<li class="divider"></li><li><a href="employeeCenter.php">Employee Portal</a></li>';
-                            echo '<li><a href="viewShippments.php">Customer Portal</a></li>';
-                        }
-                        ?>
-
+                        <li><a href="#">Login</a></li>
                     </ul>
-                </li>
+                </li>-->
             </ul>
             <!--NavBar Login-->
             <form class="navbar-form navbar-right" action="submit.php" method="post">
@@ -103,9 +104,9 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
         <form class="form-group" action="submit.php" method="post" enctype="multipart/form-data">
         <table >
             <tr>
-                <td><label for="companyName">Company Name:</label></td>
+                <td><label for="companyName">ProNumber: </label></td>
                 <td>
-                    <input type="text" name="companyName" placeholder="Company Name" class="form-control" required />
+                    <input type="text" name="pronumber" placeholder="ProNumber" class="form-control" value="<?php echo $_GET['pronumber'] ?>" required />
                 </td>
             </tr>
             <tr>
@@ -120,7 +121,8 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                 </td>
                 <td>
                     <input type="radio" name="docType" value="BOL" />Bill of Lading<br>
-                    <input type="radio" name="docType" value="POD" />Proof of Delivery
+                    <input type="radio" name="docType" value="POD" />Proof of Delivery<br>
+                    <input type="radio" name="docType" value="INV" />Invoice
                 </td>
             </tr>
             <tr>

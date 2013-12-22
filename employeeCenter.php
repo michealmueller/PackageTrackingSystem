@@ -69,7 +69,7 @@ $docs = $trackingSystem->getUploads();
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
                 <li><a href="clientCenter.php">Client Center</a></li>
-                <li><a href="AddUpdateCompany.php">Add Shipment</a></li>
+                <li><a href="addShipment.php">Add Shipment</a></li>
                 <li><a href="">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
@@ -100,6 +100,11 @@ if(isset($_POST['input']))
 {
     $input = $_POST['input'];
 }
+elseif(isset($_SESSION['ProNumber']))
+{
+    $input = $_SESSION['ProNumber'];
+}
+
 ?>
 <form class="form-inline" action="" method="post">
     <div class="form-group-search">
@@ -114,7 +119,7 @@ if(isset($_POST['input']))
         <table class="table table-bordered">
             <tr>
                 <td><b>Record Number</b></td>
-                <td><b>Company Name</b></td>
+                <td><b>Client Name</b></td>
                 <td><b>ProNumber</b></td>
                 <td><b>Service</b></td>
                 <td><b>Equipment</b></td>
@@ -123,22 +128,21 @@ if(isset($_POST['input']))
                 <td><b>Delivery Location</b></td>
                 <td colspan="2"><b>Current Location</b></td>
                 <?php
+                if(isset($input))
+                {
                     if(is_numeric($input))
-                        {
-                            $inputType = 1;
-                            echo '<td><b>Documents</b></td>';
-                        }
+                    {
+                        $inputType = 1;
+                        echo '<td><b>Documents</b></td>';
+                    }
+                }
                 ?>
                 <td><b>Edit</b></td>
             </tr>
-
             <?php
             if(isset($_POST['submit']))
             {
                 $shipments = $trackingSystem->getShipment($_POST['input']);
-                //make sure to end div!  //.$shipments['inputtype']
-
-                //print_r($shipments['result']);
 
                 if($shipments['inputtype'] == 0)
                 {

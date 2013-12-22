@@ -31,11 +31,11 @@ class TrackingSystem
 
         if($inputtype == 0)
         {
-            $sql = "SELECT id, Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE ProNumber = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE ProNumber = '$input'";
         }
         elseif($inputtype == 1)
         {
-            $sql = "SELECT id, Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE Company_Name = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE Client_Name = '$input'";
         }
 
         try{
@@ -57,32 +57,46 @@ class TrackingSystem
         return array('result'=>$result, 'inputtype'=>$inputtype);
     }
 
-    function addShipmentInfo($pronumber, $status, $pickuplocation, $deliverylocation, $service, $equipment, $companyname, $currentLocationCity, $currentLocationState)
+    function addShipmentInfo($pronumber, $status, $pickuplocation, $deliverylocation, $service, $equipment,
+                             $clientname, $currentLocationCity, $currentLocationState)
     {
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+        } catch(PDOException $pdoE){
+            die('Could not connect to Database: ' . $pdoE->getMessage());
+        }
+        $sql = "INSERT INTO shipment_info (Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location,
+                Delivery_Location, CurrentLocationCity, CurrentLocationState) VALUES ('$clientname', '$pronumber',
+                '$service', '$equipment', '$status', '$pickuplocation', '$deliverylocation', '$currentLocationCity',
+                '$currentLocationState'
+                )";
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+        //$pdo = NULL;
+    }
+
+    function updateShipmentInfo($recordNumber, $pronumber, $status, $pickuplocation, $deliverylocation, $service,
+                                $equipment, $clientname, $currentLocationCity, $currentLocationState)
+    {
+        try{
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
 
-        $query = $pdo->prepare('INSERT INTO Shipment_Info (Company_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState, entryDate) VALUES (:companyname, :pronumber, :service, :equipment, :status, :pickuplocation, :deliverylocation, :CurrentLocation-City, :CurrentLocation-State, :time)');
-        $query->execute(array(':companyname'=>$companyname,
-        ':pronumber'=>$pronumber,
-            ':service'=>$service,
-            ':equipment'=>$equipment,
-            ':status'=>$status,
-            ':pickuplocation'=>$pickuplocation,
-            ':deliverylocation'=>$deliverylocation,
-            ':CurrentLocation-City'=>$currentLocationCity,
-            ':CurrentLocation-State'=>$currentLocationState,
-            ':time'=>time()
-            ));
-        $pdo = NULL;
-    }
+        $sql = "UPDATE shipment_info SET Client_Name='$clientname', ProNumber='$pronumber', Service='$service',
+                        Equipment='$equipment', Status='$status', currentLocationCity='$currentLocationCity',
+                        CurrentLocationState='$currentLocationState', Pickup_Location='$pickuplocation',
+                        Delivery_Location='$deliverylocation' WHERE id='$recordNumber'";
 
-    function updateShipmentInfo()
-    {
-        //todo::use SQL UPDATE to update shipment status!!!!!!!!!!!!!!!!!
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+        $pdo = NULL;
+
+        $_SESSION['ProNumber'] = $_POST['pronumber'];
     }
 
     function UploadtoDB($ProNumber, $doctype, $location)
@@ -96,7 +110,7 @@ class TrackingSystem
         $query = $pdo->prepare('INSERT INTO uploads (ProNumber, Document_Type, Location) VALUES (:ProNumber, :documenttype, :location)');
         $query->execute(array(':ProNumber'=>$ProNumber,
             ':documenttype'=>$doctype,
-            ':location'=>'upload/'.$location
+            ':location'=>$location
         ));
         $pdo = NULL;
     }

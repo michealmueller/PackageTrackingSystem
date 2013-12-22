@@ -48,12 +48,12 @@ else{
 </head>
 <body>
 <?php
-    if($_SESSION['loginType'] != 'employee')
-    {
-        session_destroy();
-        echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
-        exit();
-    }
+if($_SESSION['loginType'] != 'employee')
+{
+    session_destroy();
+    echo '<div class="display"><p><h2>You are not a Bestway employee so this page is not accessible to you!, <br><br>Sorry for the inconvenience</h2></p></div>';
+    exit();
+}
 ?>
 <!--NAvBar-->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -69,9 +69,11 @@ else{
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
+                <li><a href="clientCenter.php">Client Center</a></li>
+                <li><a href="addShipment.php">Add Shipment</a></li>
+                <li><a href="">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -103,9 +105,17 @@ else{
         <form class="form-container" action="submit.php" method="post">
             <table class="table table-bordered">
                 <tr>
-                    <td><label>Company Name: </label></td>
                     <td>
-                        <input class="form-control input-sm" type="text" name="companyname" value="<?php echo $recordInfo['Company_Name']; ?>" />
+                        <label>Record Number:</label>
+                    </td>
+                    <td>
+                        <input class="form-control input-sm" type="text" name="recordNumber" value="<?php echo $_GET['record']; ?>" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Client Name: </label></td>
+                    <td>
+                        <input class="form-control input-sm" type="text" name="companyname" value="<?php echo $recordInfo['Client_Name']; ?>" />
                     </td>
                 </tr>
                 <tr>
@@ -212,20 +222,13 @@ else{
                 <tr>
                     <td><label for="pickupLoc">Pickup Location:</label></td>
                     <td>
-                        <input class="form-control input-sm" name="pickupLoc" value="<?php echo $recordInfo['Pickup_Location'];?>">
+                        <input class="form-control input-sm" name="pickupLocation" value="<?php echo $recordInfo['Pickup_Location'];?>">
                     </td>
                 </tr>
                 <tr>
                     <td><label>Delivery Location:</label></td>
                     <td>
-                        <input class="form-control input-sm" name="deliveryLoc" value="<?php echo $recordInfo['Delivery_Location'];?>">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label>State:</label></td>
-                    <td>
-
+                        <input class="form-control input-sm" name="deliveryLocation" value="<?php echo $recordInfo['Delivery_Location'];?>">
                     </td>
                 </tr>
                 <tr>

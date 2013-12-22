@@ -54,8 +54,28 @@ else{
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="employeeCenter.php">Employee Center</a></li>
-                <li><a href="clientCenter.php">Client Center</a></li>
+                <?php
+                    if(isset($_SESSION['loggedin']))
+                    {
+                        if($_SESSION['loginType'] == 'employee')
+                        {
+                            echo '<li><a href="employeeCenter.php">Employee Center</a></li>';
+                        }
+                        elseif($_SESSION['loginType'] == 'company')
+                        {
+                            echo '<li><a href="clientCenter.php">Client Center</a></li>';
+                        }
+                    }
+                    else
+                    {
+                        echo '
+                                <li><a href="TrackingSystemLogin.php">Employee Center</a></li>
+                                <li><a href="TrackingSystemLogin.php">Client Center</a></li>
+                            ';
+                    }
+                ?>
+
+
             </ul>
         <!--NavBar Login-->
             <form class="navbar-form navbar-right" action="submit.php" method="post">
@@ -74,35 +94,34 @@ else{
     </div>
 </div>
 <!--NavBar End-->
+<div class="shipment-container">
+    <div class="display ">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>Bestway Tracking Center</h1>
+            </div>
+        </div>
 
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>Bestway Tracking Center</h1>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Multiple tracking options</h2>
+                    <p>Track your packages by client name, or ProNumber!</p>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-md-3">
+                    <h2>Document Storage</h2>
+                    <p>Upload and store your documents for quick viewing!</p>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+            </footer>
+        </div>
+        </div>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Multiple tracking options</h2>
-            <p>Track your packages by client name, or ProNumber!</p>
-        </div>
-        <div class="col-sm-4">
-
-        </div>
-        <div class="col-md-4">
-            <h2>Document Storage</h2>
-            <p>Upload and store your documents for quick viewing!</p>
-        </div>
-    </div>
-
-    <hr>
-
-    <footer>
-        <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
-    </footer>
-</div>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

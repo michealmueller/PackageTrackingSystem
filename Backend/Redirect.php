@@ -8,6 +8,9 @@
 
 namespace Backend;
 
+session_start();
+
+require_once 'Backend\TrackingSystem.php';
 
 class Redirect
 {
@@ -27,5 +30,18 @@ class Redirect
     function loginRedirect()
     {
         header('Location: index.php');
+    }
+    function uploadRedirect()
+    {
+        header('Location: viewDocs.php?record='.$_SESSION['record']);
+    }
+    function updateRecord($input)
+    {
+        $tracking = new \Backend\TrackingSystem();
+
+        $shipments = $tracking->getShipment($input);
+        $_SESSION['shipments'] = $shipments;
+
+        header('Location: employeeCenter.php');
     }
 } 

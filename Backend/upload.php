@@ -10,13 +10,11 @@ namespace Backend;
 
 class upload
 {
-    protected $BOLpathname = 'upload\bill-of-lading';
-    protected $PODpathname = 'upload\proof-of-delivery';
     public $uploadName;
 
     function file_upload()
     {
-        $idInfo = $_POST['companyName'].'_'.$_POST['docType'].'_';
+        $idInfo = $_POST['docType'].'_';
         $tmpname = $_FILES['file']['tmp_name'];
         $this->uploadName = $idInfo.$_FILES['file']['name'];
 
@@ -35,29 +33,13 @@ class upload
             }
             else
             {
-                echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-                echo "Type: " . $_FILES["file"]["type"] . "<br>";
-                echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-                echo "Temp file: " .$_FILES["file"]["tmp_name"] . "<br>";
-
                 if (file_exists('upload/'. $idInfo.$_FILES["file"]["name"]))
                 {
                     echo $idInfo.$_FILES["file"]["name"] . "<b> already exists.</b> ";
                 }
                 else
                 {
-
-                    if(move_uploaded_file($tmpname, 'upload/'.$this->uploadName)== TRUE)
-                    {
-                        echo 'uploaded';
-                    }
-                    else
-                    {
-                        echo $this->uploadName;
-                      echo 'died';
-                        exit;
-                    }
-                    echo "Stored in: upload/" . $this->uploadName;
+                    move_uploaded_file($tmpname, 'upload/'.$this->uploadName);
                 }
             }
         }

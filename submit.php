@@ -58,9 +58,21 @@ if(isset($_POST['submitfrom']))
             $_SESSION['loginType'] == 'company';
         }
     }
-    elseif($_POST['submitfrom'] == 'employee_add_update')
+    elseif($_POST['submitfrom'] == 'add_shipment')
     {
         $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+        if($_SESSION['loginType'] == 'employee')
+        {
+            $Redirect->employeeRedirect();
+        }
+    }
+    elseif($_POST['submitfrom'] == 'updateRecord')
+    {
+        $tracking->updateShipmentInfo($_POST['recordNumber'], $_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+        if($_SESSION['loginType'] == 'employee')
+        {
+            $Redirect->updateRecord($_POST['pronumber']);
+        }
     }
     elseif($_POST['submitfrom'] == 'upload')
     {
@@ -70,7 +82,8 @@ if(isset($_POST['submitfrom']))
         }
         else{
             //$location = getcwd()."\\".$upload->uploadName;
-            $tracking->UploadtoDB($_POST['companyName'], $_POST['docType'], $upload->uploadName);
+            $tracking->UploadtoDB($_POST['pronumber'], $_POST['docType'], $upload->uploadName);
+            $Redirect->uploadRedirect();
         }
     }
 }

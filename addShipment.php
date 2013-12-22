@@ -58,7 +58,7 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                 <li><a href="/">Home</a></li>
                 <li ><a href="employeeCenter.php">Employee Center</a></li>
                 <li><a href="clientCenter.php">Client Center</a></li>
-                <li class="active"><a href="AddUpdateCompany.php">Add Shipment</a></li>
+                <li class="active"><a href="addShipment.php">Add Shipment</a></li>
                 <li><a href="">Add Client</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
@@ -91,7 +91,7 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
         <form class="form-container" action="submit.php" method="post">
             <table class="table table-bordered">
                 <tr>
-                    <td><label>Company Name: </label></td>
+                    <td><label>Client Name: </label></td>
                     <td>
                         <input class="form-control input-sm" type="text" name="companyname" />
                     </td>
@@ -106,8 +106,8 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                     <td><label>Service: </label></td>
                     <td>
                         <select class="form-control input-sm" name="service">
-                            <option value="0">Long Haul</option>
-                            <option value="1">Short Haul</option>
+                            <option value="Long Haul">Long Haul</option>
+                            <option value="Short Haul">Short Haul</option>
                         </select>
                     </td>
                 </tr>
@@ -115,9 +115,9 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                     <td><label>Equipment: </label></td>
                     <td>
                         <select class="form-control input-sm" name="equipment">
-                            <option>Van</option>
-                            <option>Flatbed</option>
-                            <option>Conestoga</option>
+                            <option value="Van">Van</option>
+                            <option value="Flatbed">Flatbed</option>
+                            <option value="Conestoga">Conestoga</option>
                         </select>
                     </td>
                 </tr>
@@ -125,21 +125,19 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                     <td><label>Status: </label></td>
                     <td>
                         <select class="form-control input-sm" name="status">
-                            <option value="0">Picked Up</option>
-                            <option value="1">In Transit</option>
-                            <option value="2">Delivered</option>
+                            <option value="Picked Up">Picked Up</option>
+                            <option value="In Transit">In Transit</option>
+                            <option value="Delivered">Delivered</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
-                    <td><label>Current Location City: </label></td>
+                    <td>
+                        <label>Current Location City: </label><br>
+                        <label>State: </label>
+                    </td>
                     <td>
                         <input class="form-control input-sm" type="text" name="currentlocationcity" />
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>State: </label></td>
-                    <td>
                         <select class="form-control input-sm" name="currentlocationstate">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -194,10 +192,27 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                             <option value="WY">Wyoming</option>
                         </select>
                     </td>
+
+                </tr>
+                <tr>
+                    <td><label>Pickup Location:</label></td>
+                    <td>
+                        <input class="form-control input-sm" type="text" name="pickupLocation" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Delivery Location:</label></td>
+                    <td>
+                        <input class="form-control input-sm" type="text" name="deliveryLocation" />
+                    </td>
+                </tr>
+                <tr>
+
+
                 </tr>
                 <tr>
                     <td>
-                        <input type="hidden" name="submitfrom" value="employee_add_update" />
+                        <input type="hidden" name="submitfrom" value="add_shipment" />
                     </td>
                 </tr>
                 <tr>

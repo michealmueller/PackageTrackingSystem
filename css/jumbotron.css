@@ -16,7 +16,7 @@ body {
 
 .shipment-container{
     background-color: #ffffff;
-    width:1128px;
+    width:1228px;
     height:auto;
     margin: 0 auto;
 }
@@ -40,11 +40,12 @@ body {
 
 
 .display{
-    width:1124px;
+    width:1224px;
     height:auto;
     position:relative;
     margin: 0 auto;
     text-align: center;
+    padding:5px;
 }
 
 .display-update{
