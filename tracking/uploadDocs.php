@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: micheal
- * Date: 12/5/13
- * Time: 11:11 PM
+ * Date: 11/28/13
+ * Time: 9:10 AM
  */
 session_start();
 
@@ -20,20 +20,7 @@ if(isset($_SESSION['loggedin']) == TRUE)
 else{
     $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
-
-require_once 'Backend\TrackingSystem.php';
-
-if(isset($_GET['record']))
-{
-    $record = $_GET['record'];
-    $_SESSION['record'] = $_GET['record'];
-}
-else{
-    $record = 0;
-}
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,7 +53,7 @@ else{
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="employeeCenter.php">Employee Center</a></li>
+                <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
                 <li><a href="clientCenter.php">Client Center</a></li>
                 <li><a href="addShipment.php">Add Shipment</a></li>
                 <li><a href="">Add Client</a></li>
@@ -95,47 +82,58 @@ else{
 </div>
 <!--NavBar End-->
 
-<div class="shipment-container">
-    <div class="display">
-        <div class="pull-left">
-            <a href="employeeCenter.php" class="btn btn-primary btn-md" role="button">&laquo; Back </a>
-        </div>
-        <div class="pull-right">
-            <a href="uploadDocs.php?pronumber=<?php echo $_GET['record']; ?>" class="btn btn-primary btn-md" role="button">Upload Document &raquo;</a>
-        </div>
-
-        <p class="text-center text-primary"><h3><b>Uploaded Documents</b></h3></p>
-        <table class="table table-hover">
+<div class="form-container">
+    <div class="form-display">
+        <form class="form-group" action="submit.php" method="post" enctype="multipart/form-data">
+        <table >
             <tr>
-                <td><b>Company Name</b></td>
-                <td><b>Document Type</td>
-                <td><b>Location</b></td>
-                <td><b>View</b></td>
+                <td><label for="companyName">ProNumber: </label></td>
+                <td>
+                    <input type="text" name="pronumber" placeholder="ProNumber" class="form-control" value="<?php echo $_GET['pronumber'] ?>" required />
+                </td>
             </tr>
-            <?php
-                $trackingSystem = new Backend\TrackingSystem();
-                $docs = $trackingSystem->getUploads($record);
-                $arrLength = count($docs)-1;
-            if($docs == NULL)
-            {
-                echo '<h2>There are no documents for this ProNumber!</h2>';
-            }
-            else{
-                for($i=0; $i <= $arrLength; $i++)
-                {
-                    echo '<tr>';
-                    foreach($docs[$i] as $value)
-                    {
-                        echo '<td>'.$value.'</td>';
-                    }
-                    echo '<td><a href="/bestway/upload/'.$docs[$i]['Location'].'">View</a></td>';
-                    echo '</tr>';
-                }
-            }
-            ?>
+            <tr>
+                <td><label for="file">File to Upload:</label></td>
+                <td>
+                    <input type="file" name="file" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="docType">File Type:</label>
+                </td>
+                <td>
+                    <input type="radio" name="docType" value="BOL" />Bill of Lading<br>
+                    <input type="radio" name="docType" value="POD" />Proof of Delivery<br>
+                    <input type="radio" name="docType" value="INV" />Invoice
+                </td>
+            </tr>
+            <tr>
+                <td><input type="hidden" name="submitfrom" value="upload" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="Upload" class="btn btn-success btn-block" />
+                </td>
+            </tr>
+
+
         </table>
+        </form>
     </div>
 </div>
+
+<hr>
+
+<footer>
+    <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+</footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

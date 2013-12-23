@@ -28,7 +28,7 @@ else{
                         required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
 
-require_once 'Backend\TrackingSystem.php';
+require_once 'Backend/TrackingSystem.php';
 
 $trackingSystem = new \Backend\TrackingSystem();
 $docs = $trackingSystem->getUploads();
@@ -76,7 +76,6 @@ $docs = $trackingSystem->getUploads();
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
-                <li><a href="clientCenter.php">Client Center</a></li>
                 <li><a href="addShipment.php">Add Shipment</a></li>
                 <li><a href="addClient.php">Add Client</a></li>
                 <!--<li class="dropdown">
@@ -164,7 +163,7 @@ elseif(isset($_SESSION['ProNumber']))
                     }
 
                     echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
-                    echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][0]['id'].'">Edit</a></b></td>';
+                    echo '<td><b><a href="/tracking/edit.php?record='.$shipments['result'][0]['id'].'">Edit</a></b></td>';
                     echo '</tr>';
                 }
                 elseif($shipments['inputtype'] == 1)
@@ -179,7 +178,7 @@ elseif(isset($_SESSION['ProNumber']))
                         {
                             echo '<td>'.$value.'</td>';
                         }
-                        echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][$i]['id'].'">Edit</a></b></td>';
+                        echo '<td><b><a href="/tracking/edit.php?record='.$shipments['result'][$i]['id'].'">Edit</a></b></td>';
                         echo '</tr>';
                     }
 

@@ -14,10 +14,8 @@ class Login
 {
     function checkLogin($username, $password)
     {
-        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway','root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem', 'bestway_tracker', 'B3stTransfer1');
         }catch (PDOException $pdoE){
             die("Could not connect: ". $pdoE->getMessage());
         }

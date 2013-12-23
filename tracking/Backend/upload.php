@@ -14,7 +14,7 @@ class upload
 
     function file_upload()
     {
-        $idInfo = $_POST['docType'].'_';
+        $idInfo = $_POST['pronumber'].'_'.$_POST['docType'].'_';
         $tmpname = $_FILES['file']['tmp_name'];
         $this->uploadName = $idInfo.$_FILES['file']['name'];
 

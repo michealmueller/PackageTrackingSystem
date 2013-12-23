@@ -24,7 +24,7 @@ else{
     $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
 
-require_once 'Backend\TrackingSystem.php';
+require_once 'Backend/TrackingSystem.php';
 
 $trackingSystem = new \Backend\TrackingSystem();
 $docs = $trackingSystem->getUploads();
@@ -71,7 +71,6 @@ if($_SESSION['loginType'] != 'employee')
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="employeeCenter.php">Employee Center</a></li>
-                <li><a href="clientCenter.php">Client Center</a></li>
                 <li><a href="addShipment.php">Add Shipment</a></li>
                 <li class="active"><a href="addClient.php">Add Client</a></li>
                 <!--<li class="dropdown">
@@ -120,10 +119,10 @@ if($_SESSION['loginType'] != 'employee')
                 </tr>
                 <tr>
                     <td>
-                        <label>E-mail:</label>
+                        <label>Company Name:</label>
                     </td>
                     <td>
-                        <input type="email" name="email" class="form-control" placeholder="E-Mail" required >
+                        <input type="text" name="companyname" class="form-control" placeholder="Company Name" required >
                     </td>
                 </tr>
                 <tr>

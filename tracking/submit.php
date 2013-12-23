@@ -7,19 +7,19 @@
  */
 session_start();
 
- require_once 'Backend\addClient.php';
- require_once 'Backend\Login.php';
- require_once 'Backend\TrackingSystem.php';
- require_once 'Backend\Redirect.php';
- require_once 'Backend\upload.php';
+ require_once 'Backend/addClient.php';
+ require_once 'Backend/Login.php';
+ require_once 'Backend/TrackingSystem.php';
+ require_once 'Backend/Redirect.php';
+ require_once 'Backend/upload.php';
 
 
 
-$Redirect = new \Backend\Redirect();
-$login = new \Backend\Login();
-$addClient = new \Backend\addClient();
-$tracking = new \Backend\TrackingSystem();
-$upload = new \Backend\upload();
+$Redirect = new Backend\Redirect();
+$login = new Backend\Login();
+$addClient = new Backend\addClient();
+$tracking = new Backend\TrackingSystem();
+$upload = new Backend\upload();
 
 //$companyAdd->add('comp1', 'company1', 'Company1');
 
@@ -88,7 +88,7 @@ if(isset($_POST['submitfrom']))
     }
     elseif($_POST['submitfrom'] == 'addClient')
     {
-        $addClient->getInfo($_POST['username'], $_POST['password'], $_POST['email']);
+        $addClient->getInfo($_POST['username'], $_POST['password'], $_POST['companyname']);
     }
 }
 ?>

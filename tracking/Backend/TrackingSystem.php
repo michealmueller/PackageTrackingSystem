@@ -31,15 +31,15 @@ class TrackingSystem
 
         if($inputtype == 0)
         {
-            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE ProNumber = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE ProNumber = '$input'";
         }
         elseif($inputtype == 1)
         {
-            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM Shipment_Info WHERE Client_Name = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE Client_Name = '$input'";
         }
 
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
@@ -61,7 +61,7 @@ class TrackingSystem
                              $clientname, $currentLocationCity, $currentLocationState)
     {
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
@@ -81,7 +81,7 @@ class TrackingSystem
                                 $equipment, $clientname, $currentLocationCity, $currentLocationState)
     {
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
@@ -102,7 +102,7 @@ class TrackingSystem
     function UploadtoDB($ProNumber, $doctype, $location)
     {
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
@@ -118,7 +118,7 @@ class TrackingSystem
     function getUploads($record=0)
     {
         try{
-            $pdo = new PDO('mysql:host=localhost;dbname=bestway;charset=utf8', 'root', 'Antimatter1024');
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }

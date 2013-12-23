@@ -111,7 +111,7 @@ else{
                 <div class="col-sm-4">
 
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h2>Document Storage</h2>
                     <p>Upload and store your documents for quick viewing!</p>
                 </div>

@@ -10,7 +10,7 @@ namespace Backend;
 
 session_start();
 
-require_once 'Backend\TrackingSystem.php';
+require_once 'TrackingSystem.php';
 
 class Redirect
 {
@@ -37,7 +37,7 @@ class Redirect
     }
     function updateRecord($input)
     {
-        $tracking = new \Backend\TrackingSystem();
+        $tracking = new TrackingSystem();
 
         $shipments = $tracking->getShipment($input);
         $_SESSION['shipments'] = $shipments;
