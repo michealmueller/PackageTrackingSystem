@@ -7,6 +7,8 @@
  */
 session_start();
 
+require_once 'Backend/TrackingSystem.php';
+
 if(isset($_SESSION['loggedin']) == TRUE)
 {
     $logedin = '<div> Welcome, '. $_SESSION["username"] . ' <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
@@ -14,13 +16,16 @@ if(isset($_SESSION['loggedin']) == TRUE)
 else{
     $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
 }
+
+$tracking = new Backend\TrackingSystem();
+$clients = $tracking->getClients();
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BestWay - File Upload</title>
+    <title>BestWay - Add a Shipment</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/jumbotron.css" type="text/css">
     <link rel="stylesheet" href="css/FixedNav.css" type="text/css">
@@ -93,7 +98,16 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
                 <tr>
                     <td><label>Client Name: </label></td>
                     <td>
-                        <input class="form-control input-sm" type="text" name="companyname" />
+                        <select class="form-control input-sm" name="companyname">
+
+                            <?php
+                                foreach($clients as $value)
+                                {
+                                    echo '<option value="'.$value.'">'.$value.'</option>';
+                                }
+                            ?>
+
+                        </select>
                     </td>
                 </tr>
                 <tr>

@@ -31,7 +31,7 @@ $docs = $trackingSystem->getUploads();
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BestWay - Company Center</title>
+    <title>BestWay - Client Center</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/jumbotron.css" type="text/css">
     <link rel="stylesheet" href="css/FixedNav.css" type="text/css">
@@ -94,9 +94,15 @@ if($_SESSION['loginType'] != 'company')
 </div>
 <!--NavBar End-->
 <?php
+
 if(isset($_POST['input']))
 {
     $input = $_POST['input'];
+}
+elseif(isset($_SESSION['clientName']))
+{
+    $_POST['input'] = $_SESSION['clientName'];
+    $input = $_SESSION['clientName'];
 }
 ?>
 <form class="form-inline" action="" method="post">
@@ -104,7 +110,6 @@ if(isset($_POST['input']))
         <div class="instructions"><h4>Enter your Pro Number or Company Name to view shipment(s).</h4></div>;
         <input class="form-control input-sm input-width" type="text" name="input" placeholder="ProNumber or Company Name" <?php if(isset($input)){echo 'value="' .$input. '"';} ?> autofocus>
         <input class="btn btn-success btn-sm" type="submit" name="submit" value="Search">
-        <input type="hidden" name="submitfrom" value="">
     </div>
 </form>
 <div class="shipment-container">
@@ -120,26 +125,64 @@ if(isset($_POST['input']))
                 <td><b>Picked Up Location</b></td>
                 <td><b>Delivery Location</b></td>
                 <td colspan="2"><b>Current Location</b></td>
+                <td><b>Documents</b></td>
                 <?php
                 if(isset($input))
                 {
                     if(is_numeric($input))
                     {
                         $inputType = 1;
-                        echo '<td><b>Documents</b></td>';
                     }
-                }
-
-                if($_SESSION['loginType'] == 'employee')
-                {
-                    echo '<td><b>Edit</b></td>';
                 }
                 ?>
 
             </tr>
 
             <?php
-            if(isset($_POST['submit']))
+
+            $shipments = $trackingSystem->getShipment($_SESSION['clientName']);
+            //make sure to end div!  //.$shipments['inputtype']
+
+            //print_r($shipments['result']);
+
+            if(!isset($_POST['submit']))
+            {
+                if($shipments['inputtype'] == 0)
+                {
+                    echo '<tr>';
+                    foreach($shipments['result'][0] as $value)
+                    {
+                        echo '<td>'.$value.'</td>';
+                    }
+
+                    echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
+
+                    /*if($_SESSION['loginType'] == 'employee')
+                    {
+                        echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][0]['id'].'">Edit</a></b></td>';
+                    }*/
+
+                    echo '</tr>';
+                }
+                elseif($shipments['inputtype'] == 1)
+                {
+                    //get length of records
+                    $arrlength = count($shipments['result']) - 1;
+
+                    for($i=0;$i<=$arrlength;$i++)
+                    {
+                        echo '<tr>';
+                        foreach($shipments['result'][$i] as $value)
+                        {
+                            echo '<td>'.$value.'</td>';
+                        }
+                        echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
+                        echo '</tr>';
+                    }
+
+                }
+            }
+            elseif(isset($_POST['submit']))
             {
                 $shipments = $trackingSystem->getShipment($_POST['input']);
                 //make sure to end div!  //.$shipments['inputtype']
@@ -156,10 +199,10 @@ if(isset($_POST['input']))
 
                     echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
 
-                    if($_SESSION['loginType'] == 'employee')
+                    /*if($_SESSION['loginType'] == 'employee')
                     {
                         echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][0]['id'].'">Edit</a></b></td>';
-                    }
+                    }*/
 
                     echo '</tr>';
                 }
@@ -175,7 +218,7 @@ if(isset($_POST['input']))
                         {
                             echo '<td>'.$value.'</td>';
                         }
-                        echo '<td><b><a href="/bestway/edit.php?record='.$shipments['result'][$i]['id'].'">Edit</a></b></td>';
+                        echo '<td><a href="viewDocs.php?record='.$shipments['result'][0]['ProNumber'].'">View</a></td>';
                         echo '</tr>';
                     }
 

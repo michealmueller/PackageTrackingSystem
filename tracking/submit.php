@@ -30,16 +30,17 @@ if(isset($_POST['username']) && isset($_POST['password']))
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['loginType'] = 'employee';
-
         $Redirect->employeeRedirect();
     }
     else
     {
-        if($login->checkLogin($_POST['username'], $_POST['password']) == TRUE)
+        $loggedin = $login->checkLogin($_POST['username'], $_POST['password']);
+        if($loggedin[0] == TRUE)
         {
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['loginType'] = 'company';
+            $_SESSION['clientName'] = $loggedin[1];
             $Redirect->customerRedirect();
         }
         else

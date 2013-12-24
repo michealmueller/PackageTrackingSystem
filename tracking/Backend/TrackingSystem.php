@@ -49,7 +49,7 @@ class TrackingSystem
         $result = $query->fetchall(PDO::FETCH_ASSOC);
         if(empty($result))
         {
-            exit('There Are no results for the information you have given, Please check your input.');
+            exit('There are no results for the information you have given, Please check your input.');
         }
 
         $pdo = NULL;
@@ -136,5 +136,21 @@ class TrackingSystem
         $pdo = NULL;
 
         return $result;
+    }
+    function getClients()
+    {
+        try{
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
+        } catch(PDOException $pdoE){
+            die('Could not connect to Database: ' . $pdoE->getMessage());
+        }
+
+        $sql = "SELECT CompanyName FROM cust_login";
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+        $clients = $query->fetchAll(PDO::FETCH_COLUMN);
+
+        return $clients;
     }
 } 

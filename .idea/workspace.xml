@@ -2,45 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08b9b51-a82b-4059-b94d-f71fc90c9adf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tracking/css/bootstrap.min.css" />
-      <change type="DELETED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\mysql-connector-java-5.1.26-bin.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\mysql-connector-license.txt" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\Edit.php" afterPath="$PROJECT_DIR$/tracking/Backend/Edit.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\Login.php" afterPath="$PROJECT_DIR$/tracking/Backend/Login.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\Redirect.php" afterPath="$PROJECT_DIR$/tracking/Backend/Redirect.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\TrackingSystem.php" afterPath="$PROJECT_DIR$/tracking/Backend/TrackingSystem.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\addClient.php" afterPath="$PROJECT_DIR$/tracking/Backend/addClient.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\logout.php" afterPath="$PROJECT_DIR$/tracking/Backend/logout.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\Backend\upload.php" afterPath="$PROJECT_DIR$/tracking/Backend/upload.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\TrackingSystemLogin.php" afterPath="$PROJECT_DIR$/tracking/TrackingSystemLogin.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\addClient.php" afterPath="$PROJECT_DIR$/tracking/addClient.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\addShipment.php" afterPath="$PROJECT_DIR$/tracking/addShipment.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\clientCenter.php" afterPath="$PROJECT_DIR$/tracking/clientCenter.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\FixedNav.css" afterPath="$PROJECT_DIR$/tracking/css/FixedNav.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/tracking/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/tracking/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\bootstrap.css" afterPath="$PROJECT_DIR$/tracking/css/bootstrap.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\carousel.css" afterPath="$PROJECT_DIR$/tracking/css/carousel.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\jumbotron.css" afterPath="$PROJECT_DIR$/tracking/css/jumbotron.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\css\signin.css" afterPath="$PROJECT_DIR$/tracking/css/signin.css" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\edit.php" afterPath="$PROJECT_DIR$/tracking/edit.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\employeeCenter.php" afterPath="$PROJECT_DIR$/tracking/employeeCenter.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/tracking/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/tracking/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/tracking/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/tracking/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\index.php" afterPath="$PROJECT_DIR$/tracking/index.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\index2.html" afterPath="$PROJECT_DIR$/tracking/index2.html" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\js\bootstrap.js" afterPath="$PROJECT_DIR$/tracking/js/bootstrap.js" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/tracking/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\login.html" afterPath="$PROJECT_DIR$/tracking/login.html" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\phpinfo.php" afterPath="$PROJECT_DIR$/tracking/phpinfo.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\submit.php" afterPath="$PROJECT_DIR$/tracking/submit.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\test.php" afterPath="$PROJECT_DIR$/tracking/test.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\uploadDocs.php" afterPath="$PROJECT_DIR$/tracking/uploadDocs.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\viewDocs.php" afterPath="$PROJECT_DIR$/tracking/viewDocs.php" />
-      <change type="MOVED" beforePath="C:\Users\Micheal\PhpstormProjects\PackageTrackingSystem\viewShippments.php" afterPath="$PROJECT_DIR$/tracking/viewShippments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tracking/DummyData.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tracking/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracking/Backend/Login.php" afterPath="$PROJECT_DIR$/tracking/Backend/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracking/Backend/TrackingSystem.php" afterPath="$PROJECT_DIR$/tracking/Backend/TrackingSystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracking/addShipment.php" afterPath="$PROJECT_DIR$/tracking/addShipment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracking/clientCenter.php" afterPath="$PROJECT_DIR$/tracking/clientCenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracking/submit.php" afterPath="$PROJECT_DIR$/tracking/submit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trucking.iws" />
@@ -69,12 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="addClient.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/addClient.php">
+      <file leaf-file-name="TrackingSystem.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tracking/Backend/TrackingSystem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="42" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-15.038462" vertical-offset="51" max-vertical-offset="2720">
+            <state line="24" column="31" selection-start="420" selection-end="420" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="2635">
               <folding>
-                <element signature="e#6#90#0" expanded="true" />
+                <marker date="1387916194657" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
+                <marker date="1387916194657" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
+                <marker date="1387916194657" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
+                <marker date="1387916194657" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
+                <marker date="1387916194657" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
+                <marker date="1387916194657" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
+                <marker date="1387916194657" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
+                <marker date="1387916194657" expanded="true" signature="5378:5412" placeholder="SELECT Compa..cust_login..." />
               </folding>
             </state>
           </provider>
@@ -83,7 +58,7 @@
       <file leaf-file-name="employeeCenter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracking/employeeCenter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="122" selection-start="6348" selection-end="6348" vertical-scroll-proportion="-9.807693" vertical-offset="2550" max-vertical-offset="3502">
+            <state line="145" column="57" selection-start="5585" selection-end="5585" vertical-scroll-proportion="-26.153847" vertical-offset="1785" max-vertical-offset="3502">
               <folding>
                 <marker date="1387761443189" expanded="true" signature="798:924" placeholder="..." />
                 <marker date="1387761443189" expanded="true" signature="863:918" placeholder="..." />
@@ -96,126 +71,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="134" selection-start="4521" selection-end="4521" vertical-scroll-proportion="-5.8846154" vertical-offset="1734" max-vertical-offset="4539">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addShipment.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/addShipment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="82" selection-start="10107" selection-end="10107" vertical-scroll-proportion="-126.19231" vertical-offset="357" max-vertical-offset="4165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackingSystem.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/Backend/TrackingSystem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="167" selection-start="964" selection-end="964" vertical-scroll-proportion="46.115383" vertical-offset="1726" max-vertical-offset="2363">
-              <folding>
-                <marker date="1387761017736" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
-                <marker date="1387761017736" expanded="true" signature="733:742" placeholder="SELECT id, C..Shipment_Info..." />
-                <marker date="1387761017736" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
-                <marker date="1387761017736" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
-                <marker date="1387761017736" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
-                <marker date="1387761017736" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
-                <marker date="1387761017736" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
-                <marker date="1387761017736" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientCenter.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="clientCenter.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tracking/clientCenter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="3451">
+            <state line="127" column="41" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.24022347" vertical-offset="1944" max-vertical-offset="4182">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewDocs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/viewDocs.php">
+      <file leaf-file-name="submit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tracking/submit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="51" selection-start="5425" selection-end="5425" vertical-scroll-proportion="-18.961538" vertical-offset="1836" max-vertical-offset="2635">
+            <state line="42" column="51" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-22.0" vertical-offset="142" max-vertical-offset="1700">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadDocs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/uploadDocs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="134" selection-start="336" selection-end="336" vertical-scroll-proportion="58.192307" vertical-offset="1734" max-vertical-offset="2448">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackingSystemLogin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/TrackingSystemLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="659" selection-end="659" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/Backend/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="9" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-9.461538" vertical-offset="842" max-vertical-offset="1479">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracking/Backend/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="216" selection-end="216" vertical-scroll-proportion="0.29356357" vertical-offset="0" max-vertical-offset="748">
+            <state line="42" column="31" selection-start="1029" selection-end="1041" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="782">
               <folding>
                 <element signature="e#110#118#0" expanded="true" />
-                <marker date="1387762981194" expanded="true" signature="460:526" placeholder="SELECT usern..cust_login..." />
+                <marker date="1387918774220" expanded="true" signature="488:567" placeholder="SELECT usern..cust_login..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addClient.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/Backend/addClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="78" selection-start="665" selection-end="665" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="782">
-              <folding>
-                <marker date="1387760692891" expanded="true" signature="856:961" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edit.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/Backend/Edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="44" selection-start="683" selection-end="683" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="969">
-              <folding>
-                <marker date="1387762817610" expanded="true" signature="659:714" placeholder="SELECT * FRO..shipment_info..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tracking/Backend/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="221">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -223,7 +104,16 @@
       <file leaf-file-name="Redirect.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracking/Backend/Redirect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="182" selection-end="182" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="799">
+            <state line="10" column="16" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tracking/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
               <folding />
             </state>
           </provider>
@@ -281,16 +171,17 @@
         <option value="$PROJECT_DIR$/uploadDocs.php" />
         <option value="$PROJECT_DIR$/submit.php" />
         <option value="$PROJECT_DIR$/Backend/Redirect.php" />
-        <option value="$PROJECT_DIR$/tracking/submit.php" />
         <option value="$PROJECT_DIR$/tracking/Backend/Redirect.php" />
         <option value="$PROJECT_DIR$/tracking/Backend/addClient.php" />
-        <option value="$PROJECT_DIR$/tracking/Backend/TrackingSystem.php" />
-        <option value="$PROJECT_DIR$/tracking/clientCenter.php" />
         <option value="$PROJECT_DIR$/tracking/addClient.php" />
         <option value="$PROJECT_DIR$/tracking/viewDocs.php" />
         <option value="$PROJECT_DIR$/tracking/employeeCenter.php" />
         <option value="$PROJECT_DIR$/tracking/Backend/Edit.php" />
+        <option value="$PROJECT_DIR$/tracking/addShipment.php" />
+        <option value="$PROJECT_DIR$/tracking/Backend/TrackingSystem.php" />
         <option value="$PROJECT_DIR$/tracking/Backend/Login.php" />
+        <option value="$PROJECT_DIR$/tracking/submit.php" />
+        <option value="$PROJECT_DIR$/tracking/clientCenter.php" />
       </list>
     </option>
   </component>
@@ -456,7 +347,11 @@
       <created>1387738415303</created>
       <updated>1387738415303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Live on bestways site :)">
+      <created>1387763404293</created>
+      <updated>1387763404293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,8 +364,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11826923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11302083" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28229168" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11302083" sideWeight="0.7175824" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28229168" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -501,14 +396,15 @@
     <MESSAGE value="another commit - fresh, lost work but getting it fixed again" />
     <MESSAGE value="improvements, employee section fully functional minus client adding and updating" />
     <MESSAGE value="updated Client Center, should be opperational, need to do more testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Client Center, should be opperational, need to do more testing" />
+    <MESSAGE value="Live on bestways site :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Live on bestways site :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/tracking/submit.php</url>
-          <line>51</line>
+          <line>52</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/tracking/clientCenter.php</url>
@@ -557,7 +453,46 @@
     <entry file="file://$PROJECT_DIR$/tracking/addShipment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="87" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3910">
-          <folding />
+          <folding>
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -572,14 +507,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="5" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2363">
           <folding>
-            <marker date="1387761017736" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
-            <marker date="1387761017736" expanded="true" signature="733:742" placeholder="SELECT id, C..Shipment_Info..." />
-            <marker date="1387761017736" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
-            <marker date="1387761017736" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
-            <marker date="1387761017736" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
-            <marker date="1387761017736" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
-            <marker date="1387761017736" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
-            <marker date="1387761017736" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387916194657" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
+            <marker date="1387916194657" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
+            <marker date="1387916194657" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
+            <marker date="1387916194657" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
+            <marker date="1387916194657" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
+            <marker date="1387916194657" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387916194657" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387916194657" expanded="true" signature="5378:5412" placeholder="SELECT Compa..cust_login..." />
           </folding>
         </state>
       </provider>
@@ -589,7 +524,7 @@
         <state line="43" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="884">
           <folding>
             <element signature="e#110#118#0" expanded="true" />
-            <marker date="1387762981194" expanded="true" signature="460:526" placeholder="SELECT usern..cust_login..." />
+            <marker date="1387918774220" expanded="true" signature="488:567" placeholder="SELECT usern..cust_login..." />
           </folding>
         </state>
       </provider>
@@ -662,56 +597,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/submit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="241" selection-end="241" vertical-scroll-proportion="0.32692307" vertical-offset="0" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tracking/Backend/addClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="78" selection-start="665" selection-end="665" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="782">
+        <state line="36" column="78" selection-start="665" selection-end="665" vertical-scroll-proportion="0.80062795" vertical-offset="0" max-vertical-offset="782">
           <folding>
-            <marker date="1387760692891" expanded="true" signature="856:961" placeholder="INSERT INTO ..." />
+            <marker date="1387760692891" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tracking/Backend/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/Backend/Redirect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="182" selection-end="182" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="799">
+        <state line="11" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.16012558" vertical-offset="0" max-vertical-offset="637">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tracking/Backend/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-9.461538" vertical-offset="842" max-vertical-offset="1479">
+        <state line="69" column="9" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.38618523" vertical-offset="842" max-vertical-offset="1479">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/Backend/TrackingSystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="167" selection-start="964" selection-end="964" vertical-scroll-proportion="46.115383" vertical-offset="1726" max-vertical-offset="2363">
-          <folding>
-            <marker date="1387761017736" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
-            <marker date="1387761017736" expanded="true" signature="733:742" placeholder="SELECT id, C..Shipment_Info..." />
-            <marker date="1387761017736" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
-            <marker date="1387761017736" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
-            <marker date="1387761017736" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
-            <marker date="1387761017736" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
-            <marker date="1387761017736" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
-            <marker date="1387761017736" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,54 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/TrackingSystemLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="659" selection-end="659" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/clientCenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="3451">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/addShipment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="82" selection-start="10107" selection-end="10107" vertical-scroll-proportion="-126.19231" vertical-offset="357" max-vertical-offset="4165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/addClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="42" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-15.038462" vertical-offset="51" max-vertical-offset="2720">
-          <folding>
-            <element signature="e#6#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tracking/viewDocs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="137" column="51" selection-start="5425" selection-end="5425" vertical-scroll-proportion="-18.961538" vertical-offset="1836" max-vertical-offset="2635">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/employeeCenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="122" selection-start="6348" selection-end="6348" vertical-scroll-proportion="-9.807693" vertical-offset="2550" max-vertical-offset="3502">
-          <folding>
-            <marker date="1387761443189" expanded="true" signature="798:924" placeholder="..." />
-            <marker date="1387761443189" expanded="true" signature="863:918" placeholder="..." />
-            <marker date="1387761443189" expanded="true" signature="948:1103" placeholder="..." />
-            <marker date="1387761443189" expanded="true" signature="955:1097" placeholder="..." />
-            <marker date="1387761443189" expanded="true" signature="2181:2318" placeholder="..." />
-            <marker date="1387761443189" expanded="true" signature="2188:2308" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,20 +643,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tracking/Backend/Edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="44" selection-start="683" selection-end="683" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="969">
+        <state line="30" column="44" selection-start="683" selection-end="683" vertical-scroll-proportion="0.64050233" vertical-offset="0" max-vertical-offset="969">
           <folding>
-            <marker date="1387762817610" expanded="true" signature="659:714" placeholder="SELECT * FRO..shipment_info..." />
+            <marker date="1387762817610" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..shipment_info..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/TrackingSystemLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="53" selection-start="769" selection-end="769" vertical-scroll-proportion="-0.7083333" vertical-offset="714" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/addClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="42" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.49385476" vertical-offset="0" max-vertical-offset="2720">
+          <folding>
+            <element signature="e#6#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/addShipment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="984" selection-end="984" vertical-scroll-proportion="0.51284915" vertical-offset="0" max-vertical-offset="4403">
+          <folding>
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1387856716894" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/Backend/TrackingSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="31" selection-start="420" selection-end="420" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="2635">
+          <folding>
+            <marker date="1387916194657" expanded="true" signature="556:742" placeholder="SELECT id, C..shipment_info..." />
+            <marker date="1387916194657" expanded="true" signature="817:1005" placeholder="SELECT id, C..shipment_info..." />
+            <marker date="1387916194657" expanded="true" signature="2132:2517" placeholder="INSERT INTO ..." />
+            <marker date="1387916194657" expanded="true" signature="3121:3518" placeholder="UPDATE shipm..." />
+            <marker date="1387916194657" expanded="true" signature="4032:4134" placeholder="INSERT INTO ..." />
+            <marker date="1387916194657" expanded="true" signature="4682:4763" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387916194657" expanded="true" signature="4822:4876" placeholder="SELECT ProNu..uploads..." />
+            <marker date="1387916194657" expanded="true" signature="5378:5412" placeholder="SELECT Compa..cust_login..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/Backend/Redirect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="799">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tracking/Backend/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="216" selection-end="216" vertical-scroll-proportion="0.29356357" vertical-offset="0" max-vertical-offset="748">
+        <state line="42" column="31" selection-start="1029" selection-end="1041" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="782">
           <folding>
             <element signature="e#110#118#0" expanded="true" />
-            <marker date="1387762981194" expanded="true" signature="460:526" placeholder="SELECT usern..cust_login..." />
+            <marker date="1387918774220" expanded="true" signature="488:567" placeholder="SELECT usern..cust_login..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="51" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-22.0" vertical-offset="142" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/employeeCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="57" selection-start="5585" selection-end="5585" vertical-scroll-proportion="-26.153847" vertical-offset="1785" max-vertical-offset="3502">
+          <folding>
+            <marker date="1387761443189" expanded="true" signature="798:924" placeholder="..." />
+            <marker date="1387761443189" expanded="true" signature="863:918" placeholder="..." />
+            <marker date="1387761443189" expanded="true" signature="948:1103" placeholder="..." />
+            <marker date="1387761443189" expanded="true" signature="955:1097" placeholder="..." />
+            <marker date="1387761443189" expanded="true" signature="2181:2318" placeholder="..." />
+            <marker date="1387761443189" expanded="true" signature="2188:2308" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracking/clientCenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="41" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.24022347" vertical-offset="1944" max-vertical-offset="4182">
+          <folding />
         </state>
       </provider>
     </entry>

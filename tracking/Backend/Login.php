@@ -12,6 +12,8 @@ use PDOException;
 
 class Login
 {
+    protected $clientName;
+
     function checkLogin($username, $password)
     {
         try{
@@ -20,7 +22,7 @@ class Login
             die("Could not connect: ". $pdoE->getMessage());
         }
 
-        $sql = "SELECT username, password FROM cust_login WHERE username=:username";
+        $sql = "SELECT username, password, CompanyName FROM cust_login WHERE username=:username";
         $query = $pdo->prepare($sql);
         $query->execute(array(':username'=>$username));
 
@@ -31,14 +33,14 @@ class Login
 
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
-
+        $this->clientName = $result[0]['CompanyName'];
 
        if(!password_verify($password, $result[0]['password']))
         {
             return FALSE;
         }
         else{
-            return TRUE;
+            return array(true, $this->clientName);
         }
     }
 } 
