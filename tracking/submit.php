@@ -52,14 +52,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
 
 if(isset($_POST['submitfrom']))
 {
-    if($_POST['submitfrom'] == 'standardLogin')
-    {
-        if($login->checkLogin($_POST['username'], $_POST['password']) == TRUE)
-        {
-            $_SESSION['loginType'] == 'company';
-        }
-    }
-    elseif($_POST['submitfrom'] == 'add_shipment')
+   if($_POST['submitfrom'] == 'add_shipment')
     {
         $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
         if($_SESSION['loginType'] == 'employee')

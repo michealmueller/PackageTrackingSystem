@@ -12,14 +12,11 @@ if(isset($_SESSION['loggedin']) == TRUE)
     }
 }
 else{
-    $notloggedin = '<div class="form-group">
-                        <input class="form-control input-sm" type="text" name="username" placeholder="Username"required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control input-sm" type="password" name="password" placeholder="Password" required>
-                        </div>
-                            <input type="hidden" name="submitfrom" value="standardLogin"/>
-                            <input class="btn btn-primary btn-sm" type="submit" value="Submit">';
+    $notloggedin = '<table><tr><td><div class="form-group">
+                        <input class="form-control input-sm" type="text" name="pronumber" placeholder="ProNumber" required>
+                    </div></td>
+                        <td>&nbsp;</td>
+                        <td><input class="btn btn-primary btn-sm" type="submit" value="Submit"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><a href="TrackingSystemLogin.php" class="btn btn-success btn-sm" role="button">Login </a></td></tr></table>';
 }
 ?>
 <!DOCTYPE html>
@@ -78,7 +75,7 @@ else{
 
             </ul>
         <!--NavBar Login-->
-            <form class="navbar-form navbar-right" action="submit.php" method="post">
+            <form class="navbar-form navbar-right" action="basicsearch.php" method="get">
                 <?php
                     if(!isset($logedin))
                     {
