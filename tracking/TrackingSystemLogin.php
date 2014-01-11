@@ -1,12 +1,21 @@
 <?php
 session_start();
-
 if(isset($_SESSION['loggedin']) == TRUE)
 {
-    $logedin = '<div> Welcome, '. $_SESSION["username"] . ' <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    if($_SESSION['loginType'] == 'employee')
+    {
+        $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
+    else{
+        $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group"><a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a></div></div>';
+    }
 }
 else{
-    $notloggedin = '<div class="form-group"><input class="form-control input-sm" type="text" name="username" placeholder="Username"required></div><div class="form-group"><input class="form-control input-sm" type="password" name="password" placeholder="Password" required></div><input class="btn btn-primary btn-sm" type="submit" value="Submit">';
+    $notloggedin = '<table><tr><td><div class="form-group">
+                        <input class="form-control input-sm" type="text" name="pronumber" placeholder="ProNumber" required>
+                    </div></td>
+                        <td>&nbsp;</td>
+                        <td><input class="btn btn-primary btn-sm" type="submit" value="Submit"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><a href="TrackingSystemLogin.php" class="btn btn-success btn-sm" role="button">Login </a></td></tr></table>';
 }
 ?>
 <!DOCTYPE html>
@@ -24,7 +33,7 @@ else{
      <div class="container">
          <div class="navbar-header">
              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                 <span class="sr-only">Toggle navigation</span>
+                 <span class="sr-only">Toggle Navigation</span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
@@ -33,27 +42,43 @@ else{
          </div>
          <div class="navbar-collapse collapse">
              <ul class="nav navbar-nav">
-                 <li class="active"><a href="/">Home</a></li>
-                 <li><a href="#about">About</a></li>
-                 <li><a href="#contact">Contact</a></li>
-                 <!--<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Login</a></li>
-                        <?php
-                        /*if(isset($_SESSION['loggedin']) && isset($_SESSION['loginType']) == 'employee')
-                        {
-                            echo '<li class="divider"></li><li><a href="employeeCenter.php">Employee Portal</a></li>';
-                        }
-                        elseif(isset($_SESSION['loggedin']) && isset($_SESSION['loginType']) == 'company')
-                        {
-                            echo '<li class="divider"></li><li><a href="viewShippments.php">Customer Portal</a></li>';
-                        }*/
-                        ?>
+                 <li><a href="/">Home</a></li>
+                 <?php
+                 if(isset($_SESSION['loggedin']))
+                 {
+                     if($_SESSION['loginType'] == 'employee')
+                     {
+                         echo '<li><a href="employeeCenter.php">Employee Center</a></li>';
+                     }
+                     elseif($_SESSION['loginType'] == 'company')
+                     {
+                         echo '<li><a href="clientCenter.php">Client Center</a></li>';
+                     }
+                 }
+                 else
+                 {
+                     echo '
+                                <li><a href="TrackingSystemLogin.php">Employee Center</a></li>
+                                <li><a href="TrackingSystemLogin.php">Client Center</a></li>
+                            ';
+                 }
+                 ?>
 
-                    </ul>
-                </li>-->
+
              </ul>
+             <!--NavBar Login-->
+             <form class="navbar-form navbar-right" action="basicsearch.php" method="get">
+                 <?php
+                 if(!isset($logedin))
+                 {
+                     echo $notloggedin;
+                 }
+                 else{
+                     echo $logedin;
+                 }
+                 ?>
+             </form>
+             <!--/NavBar Login-->
          </div><!--/.nav-collapse -->
      </div>
  </div>

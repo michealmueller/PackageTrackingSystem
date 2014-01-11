@@ -54,7 +54,7 @@ if(isset($_POST['submitfrom']))
 {
    if($_POST['submitfrom'] == 'add_shipment')
     {
-        $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+        $tracking->addShipmentInfo($_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['pickuplocationstate'], $_POST['deliveryLocation'], $_POST['deliverylocationstate'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
         if($_SESSION['loginType'] == 'employee')
         {
             $Redirect->employeeRedirect();
@@ -62,10 +62,17 @@ if(isset($_POST['submitfrom']))
     }
     elseif($_POST['submitfrom'] == 'updateRecord')
     {
-        $tracking->updateShipmentInfo($_POST['recordNumber'], $_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
-        if($_SESSION['loginType'] == 'employee')
+        if($_POST['delete'] == 'Delete Record')
         {
-            $Redirect->updateRecord($_POST['pronumber']);
+            $tracking->deleteRecord($_POST['recordNumber']);
+            $Redirect->employeeRedirect();
+        }
+        else{
+            $tracking->updateShipmentInfo($_POST['recordNumber'], $_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+            if($_SESSION['loginType'] == 'employee')
+            {
+                $Redirect->updateRecord($_POST['pronumber']);
+            }
         }
     }
     elseif($_POST['submitfrom'] == 'upload')

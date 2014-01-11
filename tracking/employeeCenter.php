@@ -12,12 +12,12 @@ if(isset($_SESSION['loggedin']) == TRUE)
     if($_SESSION['loginType'] == 'employee')
     {
         $logedin = '<div><a href="employeeCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group">
-        <a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a>
+        <table><tr><td><a href="Backend/logout.php"><a href="Backend/logout.php" class="btn btn-danger btn-sm" role="button">Log Out </a></td></tr></table>
         </div></div>';
     }
     else{
         $logedin = '<div><a href="clientCenter.php"> Welcome, '.$_SESSION["username"].'</a> <div class="form-group">
-        <a href="Backend/logout.php"><button class="btn btn-danger btn-sm btn-block" type="button">Log Out</button></a>
+        <table><tr><td><a href="Backend/logout.php"><a href="Backend/logout.php" class="btn btn-danger btn-sm" role="button">Log Out </a></td></tr></table>
         </div></div>';
     }
 }
@@ -134,8 +134,8 @@ elseif(isset($_SESSION['ProNumber']))
                 <td><b>Service</b></td>
                 <td><b>Equipment</b></td>
                 <td><b>Status</b></td>
-                <td><b>Picked Up Location</b></td>
-                <td><b>Delivery Location</b></td>
+                <td colspan="2"><b>Picked Up Location</b></td>
+                <td colspan="2"><b>Delivery Location</b></td>
                 <td colspan="2"><b>Current Location</b></td>
                 <?php
                 if(isset($input))

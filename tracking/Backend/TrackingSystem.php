@@ -31,11 +31,11 @@ class TrackingSystem
 
         if($inputtype == 0)
         {
-            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE ProNumber = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Pickup_Locationstate, Delivery_Location, Delivery_Locationstate,CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE ProNumber = '$input'";
         }
         elseif($inputtype == 1)
         {
-            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Delivery_Location, CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE Client_Name = '$input'";
+            $sql = "SELECT id, Client_Name, ProNumber, Status, Pickup_Location, Pickup_Locationstate, Delivery_Location, CurrentLocationCity, Delivery_Locationstate, CurrentLocationState FROM shipment_info WHERE Client_Name = '$input'";
         }
 
         try{
@@ -57,7 +57,7 @@ class TrackingSystem
         return array('result'=>$result, 'inputtype'=>$inputtype);
     }
 
-    function addShipmentInfo($pronumber, $status, $pickuplocation, $deliverylocation, $service, $equipment,
+    function addShipmentInfo($pronumber, $status, $pickuplocation, $pickuplocationstate, $deliverylocation, $deliverylocationstate, $service, $equipment,
                              $clientname, $currentLocationCity, $currentLocationState)
     {
         try{
@@ -65,9 +65,9 @@ class TrackingSystem
         } catch(PDOException $pdoE){
             die('Could not connect to Database: ' . $pdoE->getMessage());
         }
-        $sql = "INSERT INTO shipment_info (Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location,
-                Delivery_Location, CurrentLocationCity, CurrentLocationState) VALUES ('$clientname', '$pronumber',
-                '$service', '$equipment', '$status', '$pickuplocation', '$deliverylocation', '$currentLocationCity',
+        $sql = "INSERT INTO shipment_info (Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location,Pickup_Locationstate,
+                Delivery_Location, Delivery_Locationstate, CurrentLocationCity, CurrentLocationState) VALUES ('$clientname', '$pronumber',
+                '$service', '$equipment', '$status', '$pickuplocation', '$pickuplocationstate', '$deliverylocation', '$deliverylocationstate', '$currentLocationCity',
                 '$currentLocationState'
                 )";
 
@@ -152,5 +152,18 @@ class TrackingSystem
         $clients = $query->fetchAll(PDO::FETCH_COLUMN);
 
         return $clients;
+    }
+
+    function deleteRecord($recordNumber)
+    {
+        try{
+            $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
+        } catch(PDOException $pdoE){
+            die('Could not connect to Database: ' . $pdoE->getMessage());
+        }
+
+        $sql = "DELETE FROM shipment_info WHERE id='$recordNumber'";
+        $query = $pdo->prepare($sql);
+        $query->execute();
     }
 } 

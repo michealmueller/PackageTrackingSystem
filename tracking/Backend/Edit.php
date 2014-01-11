@@ -21,14 +21,14 @@ class Edit {
             //redirect
         }
         else{
-            $this->recordNum = $record;
+            //$this->recordNum = $record;
 
             try{
                 $pdo = new PDO('mysql:host=localhost;dbname=bestway_trackingSystem;charset=utf8', 'bestway_tracker', 'B3stTransfer1');
             } catch(PDOException $pdoE){
                 die('Could not connect to Database: ' . $pdoE->getMessage());
             }
-            $sql = "SELECT * FROM shipment_info WHERE id='$this->recordNum'";
+            $sql = "SELECT * FROM shipment_info WHERE id='$record'";
 
             $query = $pdo->prepare($sql);
             $query->execute();
