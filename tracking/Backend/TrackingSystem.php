@@ -35,7 +35,8 @@ class TrackingSystem
         }
         elseif($inputtype == 1)
         {
-            $sql = "SELECT id, Client_Name, ProNumber, Status, Pickup_Location, Pickup_Locationstate, Delivery_Location, CurrentLocationCity, Delivery_Locationstate, CurrentLocationState FROM shipment_info WHERE Client_Name = '$input'";
+            //$sql = "SELECT id, Client_Name, ProNumber, Status, Pickup_Location, Pickup_Locationstate, Delivery_Location, CurrentLocationCity, Delivery_Locationstate, CurrentLocationState FROM shipment_info MATCH('Client_Name') against('$input')";
+            $sql = "SELECT id, Client_Name, ProNumber, Service, Equipment, Status, Pickup_Location, Pickup_Locationstate, Delivery_Location, Delivery_Locationstate, CurrentLocationCity, CurrentLocationState FROM shipment_info WHERE Client_Name LIKE '%$input%'";
         }
 
         try{
@@ -77,7 +78,7 @@ class TrackingSystem
         //$pdo = NULL;
     }
 
-    function updateShipmentInfo($recordNumber, $pronumber, $status, $pickuplocation, $deliverylocation, $service,
+    function updateShipmentInfo($recordNumber, $pronumber, $status, $pickuplocation, $pickuplocationstate, $deliverylocation, $deliverylocationstate, $service,
                                 $equipment, $clientname, $currentLocationCity, $currentLocationState)
     {
         try{
@@ -88,8 +89,8 @@ class TrackingSystem
 
         $sql = "UPDATE shipment_info SET Client_Name='$clientname', ProNumber='$pronumber', Service='$service',
                         Equipment='$equipment', Status='$status', currentLocationCity='$currentLocationCity',
-                        CurrentLocationState='$currentLocationState', Pickup_Location='$pickuplocation',
-                        Delivery_Location='$deliverylocation' WHERE id='$recordNumber'";
+                        CurrentLocationState='$currentLocationState', Pickup_Location='$pickuplocation', Pickup_Locationstate='$pickuplocationstate',
+                        Delivery_Location='$deliverylocation', Delivery_Locationstate='$deliverylocationstate' WHERE id='$recordNumber'";
 
         $query = $pdo->prepare($sql);
         $query->execute();

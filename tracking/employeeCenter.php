@@ -188,7 +188,7 @@ elseif(isset($_SESSION['ProNumber']))
         </table>
         <hr>
         <footer>
-            <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+            <p>&copy; BestWay Transfer & Storage Inc. 2014</p>
         </footer>
     </div>
 </div>

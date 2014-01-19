@@ -344,7 +344,7 @@ if($_SESSION['username'] != 'BWAdmin' and $_SESSION['loginType'] != 'employee')
     </div>
     <hr>
     <footer>
-        <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+        <p>&copy; BestWay Transfer & Storage Inc. 2014</p>
     </footer>
 </div>
 

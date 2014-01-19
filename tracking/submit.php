@@ -7,7 +7,7 @@
  */
 session_start();
 
- require_once 'Backend/addClient.php';
+ require_once 'Backend/AddClienta.php';
  require_once 'Backend/Login.php';
  require_once 'Backend/TrackingSystem.php';
  require_once 'Backend/Redirect.php';
@@ -17,7 +17,7 @@ session_start();
 
 $Redirect = new Backend\Redirect();
 $login = new Backend\Login();
-$addClient = new Backend\addClient();
+$addClient = new Backend\addClienta();
 $tracking = new Backend\TrackingSystem();
 $upload = new Backend\upload();
 
@@ -68,7 +68,7 @@ if(isset($_POST['submitfrom']))
             $Redirect->employeeRedirect();
         }
         else{
-            $tracking->updateShipmentInfo($_POST['recordNumber'], $_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['deliveryLocation'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
+            $tracking->updateShipmentInfo($_POST['recordNumber'], $_POST['pronumber'], $_POST['status'],$_POST['pickupLocation'], $_POST['pickuplocationstate'], $_POST['deliveryLocation'], $_POST['deliverylocationstate'], $_POST['service'], $_POST['equipment'], $_POST['companyname'], $_POST['currentlocationcity'], $_POST['currentlocationstate']);
             if($_SESSION['loginType'] == 'employee')
             {
                 $Redirect->updateRecord($_POST['pronumber']);

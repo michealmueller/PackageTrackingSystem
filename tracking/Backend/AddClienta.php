@@ -10,7 +10,7 @@ namespace Backend;
 use PDO;
 use PDOException;
 
-class addClient
+class addClienta
 {
     function getInfo($compUser, $compPass, $companyname)
     {

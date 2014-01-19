@@ -122,8 +122,8 @@ elseif(isset($_SESSION['clientName']))
                 <td><b>Company Name</b></td>
                 <td><b>ProNumber</b></td>
                 <td><b>Status</b></td>
-                <td><b>Picked Up Location</b></td>
-                <td><b>Delivery Location</b></td>
+                <td colspan="2"><b>Picked Up Location</b></td>
+                <td colspan="2"><b>Delivery Location</b></td>
                 <td colspan="2"><b>Current Location</b></td>
                 <td><b>Documents</b></td>
                 <?php
@@ -228,7 +228,7 @@ elseif(isset($_SESSION['clientName']))
         </table>
         <hr>
         <footer>
-            <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+            <p>&copy; BestWay Transfer & Storage Inc. 2014</p>
         </footer>
     </div>
 </div>

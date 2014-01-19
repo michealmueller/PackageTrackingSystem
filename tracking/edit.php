@@ -226,7 +226,7 @@ if($_SESSION['loginType'] != 'employee')
                     <td><label for="pickupLoc">Pickup Location:</label></td>
                     <td>
                         <input class="form-control input-sm" name="pickupLocation" value="<?php echo $recordInfo['Pickup_Location'];?>">
-                        <select class="form-control input-sm" name="currentlocationstate">
+                        <select class="form-control input-sm" name="pickuplocationstate">
                             <option value="<?php echo $recordInfo['Pickup_Locationstate'];?>"><?php echo $recordInfo['Pickup_Locationstate'];?></option>
                             <option value="Alabama">Alabama</option>
                             <option value="Alaska">Alaska</option>
@@ -287,7 +287,7 @@ if($_SESSION['loginType'] != 'employee')
                     <td><label>Delivery Location:</label></td>
                     <td>
                         <input class="form-control input-sm" name="deliveryLocation" value="<?php echo $recordInfo['Delivery_Location'];?>">
-                        <select class="form-control input-sm" name="currentlocationstate">
+                        <select class="form-control input-sm" name="deliverylocationstate">
                             <option value="<?php echo $recordInfo['Delivery_Locationstate'];?>"><?php echo $recordInfo['Delivery_Locationstate'];?></option>
                             <option value="Alabama">Alabama</option>
                             <option value="Alaska">Alaska</option>
@@ -361,7 +361,7 @@ if($_SESSION['loginType'] != 'employee')
     <hr>
 
     <footer>
-        <p>&copy; BestWay Transfer & Storage Inc. 2013</p>
+        <p>&copy; BestWay Transfer & Storage Inc. 2014</p>
     </footer>
 </div>
 
